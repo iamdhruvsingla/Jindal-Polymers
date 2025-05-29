@@ -142,6 +142,18 @@
           position: relative;
           z-index: 1000;
       }
+      .about_img_box.first_big {
+        width: 90%; /* Increased from 70% */
+        padding-left: 0; /* Removed the left padding */
+        margin-right: -50px; /* Pulls the image closer to the text */
+      }
+
+      /* Add this new rule to make the image itself larger */
+      .about_img_box.first_big img {
+          width: 100%;
+          max-height: 400px; /* Adjust as needed */
+          object-fit: cover;
+      }
     </style>
 </head>
 <body>
@@ -154,7 +166,7 @@
     </a>
 
     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-      <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+      <li><a href="#" class="nav-link px-2 link-dark">Home</a></li>
       <li><a href="#" class="nav-link px-2 link-dark">About Us</a></li>
       <div class="dropdown">
         <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton">
@@ -254,10 +266,14 @@
               <li><a class="dropdown-item" href="#">Black PPCP</a></li>
             </ul>
           </li>
+          <li class=""dropdown-submenu>
+            <a class="dropdown-item" href="#">All Products</a>
+          </li>
+          </li>
         </ul>
       </div>
       <li><a href="#" class="nav-link px-2 link-dark">Gallery</a></li>
-      <li><a href="#" class="nav-link px-2 link-dark">Contact Us</a></li>
+      <li><a href="contactus.html" class="nav-link px-2 link-dark">Contact Us</a></li>
     </ul>
 
     <div class="col-md-3 text-end">
@@ -468,7 +484,7 @@
       </div>
     </section>
     <div class="text-center p-3" style="background-color: orange">
-      © 2024 Copyright:
+      © 2025 Copyright:
       <a class="text-dark" href="https://mdbootstrap.com/">jindalpolymers.in</a>
     </div>
   </footer>
