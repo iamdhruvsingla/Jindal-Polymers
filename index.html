@@ -10,61 +10,138 @@
       .cardOrange {
         background-color: rgb(214, 139, 0);
       }
-
       .cardContent {
         text-align: center;
+        color: aqua;
       }
-
-      .body {
-        margin: 0;
-        padding: 0;
-      }
-
       .orange-line {
         width: 100%;
         height: 5px;
         background-color: orange;
       }
-
       .textCentre {
         text-align: center;
       }
-
-      .header {
-        margin-bottom: 0;
-      }
-
-      .pt-5 {
-        color: aqua;
-      }
-
-      .cardContent {
-        color: aqua;
-      }
-
       .about_img_box.first_big {
         width: 70%;
-        /* Adjust the width as needed */
         padding-left: 30px;
-        /* Add left padding to create space */
       }
-
       .about_img_box.first_big img {
         width: 100%;
-        /* Ensure the image fills the container */
       }
-
-      .py-5::before {
-        border-top: 2px solid orange;
-        margin-top: 30px;
-        /* Adjust margin as needed */
-      }
-
       .heading {
-    text-align: center;
-}
+        text-align: center;
+      }
+      .nav .dropdown {
+        position: static;
+        display: inline-block;
+      }
 
+      .nav .dropdown-menu {
+          display: none;
+          position: absolute;
+          background-color: white;
+          min-width: 250px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1001;
+          left: 0;
+          top: 100%;
+          margin-top: 0;
+          border: 1px solid rgba(0,0,0,0.15);
+          padding: 5px 0;
+          width: auto;
+      }
 
+      .nav .dropdown:hover .dropdown-menu {
+          display: block;
+      }
+
+      .nav .dropdown-toggle {
+          background: none;
+          border: none;
+          color: #212529;
+          padding: 8px 16px;
+          cursor: pointer;
+      }
+
+      .nav .dropdown-toggle:hover {
+          color: orange;
+      }
+
+      .dropdown-item {
+          padding: 8px 16px;
+          color: #212529;
+          display: block;
+          clear: both;
+          white-space: nowrap;
+          position: relative;
+          border-bottom: 1px solid #f0f0f0;
+          margin: 0 5px;
+          transition: all 0.2s ease;
+      }
+
+      .dropdown-menu > li:last-child .dropdown-item {
+          border-bottom: none;
+      }
+
+      .dropdown-item:hover {
+          background-color: orange;
+          color: white;
+      }
+
+      .nav .dropdown-submenu {
+          position: relative;
+      }
+
+      .nav .dropdown-menu .dropdown-submenu .dropdown-menu {
+          position: absolute;
+          top: 0;
+          left: 100%;
+          margin-left: 0;
+          display: none;
+          min-width: 200px;
+          border-left: 1px solid #f0f0f0;
+      }
+
+      .nav .dropdown-menu .dropdown-submenu:hover > .dropdown-menu {
+          display: block;
+      }
+
+      .nav .dropdown-menu .dropdown-submenu > a:after {
+          content: "▸";
+          float: right;
+          margin-left: 10px;
+      }
+
+      .nav .dropdown-menu .dropdown-submenu:hover > a {
+          background-color: orange;
+          color: white;
+      }
+
+      .dropdown-submenu .dropdown-menu .dropdown-item {
+          border-bottom: 1px solid #f0f0f0;
+      }
+
+      .dropdown-submenu .dropdown-menu > li:last-child .dropdown-item {
+          border-bottom: none;
+      }
+
+      .dropdown-item:hover {
+          border-bottom-color: rgba(255,255,255,0.3);
+      }
+
+      .dropdown-item:hover + .dropdown-item {
+          border-top-color: rgba(255,255,255,0.3);
+      }
+
+      .dropdown-menu:hover {
+          display: block !important;
+      }
+
+      .nav {
+          position: relative;
+          z-index: 1000;
+      }
     </style>
 </head>
 <body>
@@ -80,14 +157,103 @@
       <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
       <li><a href="#" class="nav-link px-2 link-dark">About Us</a></li>
       <div class="dropdown">
-        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton">
           Products
         </button>
-        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-          <li><a class="dropdown-item" href="#">Product 1</a></li>
-          <li><a class="dropdown-item" href="#">Product 2</a></li>
-          <li><a class="dropdown-item" href="#">Product 3</a></li>
-          <!-- Add more product items as needed -->
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li class="dropdown-submenu">
+            <a class="dropdown-item" href="#">Colour PP</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Red</a></li>
+              <li><a class="dropdown-item" href="#">Malta</a></li>
+              <li><a class="dropdown-item" href="#">Parrot Green</a></li>
+              <li><a class="dropdown-item" href="#">Sudan Blue</a></li>
+              <li><a class="dropdown-item" href="#">Grey</a></li>
+              <li><a class="dropdown-item" href="#">Silver</a></li>
+              <li><a class="dropdown-item" href="#">Coffee</a></li>
+              <li><a class="dropdown-item" href="#">Purple</a></li>
+              <li><a class="dropdown-item" href="#">Yellow</a></li>
+              <li><a class="dropdown-item" href="#">Sea Green</a></li>
+              <li><a class="dropdown-item" href="#">Military Green</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="dropdown-item" href="#">Colour PPCP</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Red</a></li>
+              <li><a class="dropdown-item" href="#">Orange</a></li>
+              <li><a class="dropdown-item" href="#">Sea Green</a></li>
+              <li><a class="dropdown-item" href="#">Light Blue</a></li>
+              <li><a class="dropdown-item" href="#">Sudan Blue</a></li>
+              <li><a class="dropdown-item" href="#">Baby Blue</a></li>
+              <li><a class="dropdown-item" href="#">Royal Blue</a></li>
+              <li><a class="dropdown-item" href="#">Pink</a></li>
+              <li><a class="dropdown-item" href="#">Lemon Yellow</a></li>
+              <li><a class="dropdown-item" href="#">Golden Yellow</a></li>
+              <li><a class="dropdown-item" href="#">Floroscent Green</a></li>
+              <li><a class="dropdown-item" href="#">Dark Green</a></li>
+              <li><a class="dropdown-item" href="#">Light Pink</a></li>
+              <li><a class="dropdown-item" href="#">Grey</a></li>
+              <li><a class="dropdown-item" href="#">Ivory</a></li>
+              <li><a class="dropdown-item" href="#">Purple</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="dropdown-item" href="#">Colour PPCP Special for Tasla & Tgari</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Red</a></li>
+              <li><a class="dropdown-item" href="#">Sudan Blue</a></li>
+              <li><a class="dropdown-item" href="#">Parrot Green</a></li>
+              <li><a class="dropdown-item" href="#">Orange</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="dropdown-item" href="#">Milky PPCP & PP</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Milky PPCP</a></li>
+              <li><a class="dropdown-item" href="#">Milky PP</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="dropdown-item" href="#">Milky Colour PP</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Lemon Yellow</a></li>
+              <li><a class="dropdown-item" href="#">Pink</a></li>
+              <li><a class="dropdown-item" href="#">Fluroscent Green</a></li>
+              <li><a class="dropdown-item" href="#">Orange</a></li>
+              <li><a class="dropdown-item" href="#">Sea Green</a></li>
+              <li><a class="dropdown-item" href="#">Light Blue</a></li>
+              <li><a class="dropdown-item" href="#">Light Pink</a></li>
+              <li><a class="dropdown-item" href="#">Yellow</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="dropdown-item" href="#">Natural PPCP</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">WB</a></li>
+              <li><a class="dropdown-item" href="#">CP4020</a></li>
+              <li><a class="dropdown-item" href="#">CPL</a></li>
+              <li><a class="dropdown-item" href="#">CPJ</a></li>
+              <li><a class="dropdown-item" href="#">CP4080</a></li>
+              <li><a class="dropdown-item" href="#">WBO</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="dropdown-item" href="#">NPP</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">NPP</a></li>
+              <li><a class="dropdown-item" href="#">NPP (Super)</a></li>
+              <li><a class="dropdown-item" href="#">NPP (Chinidana)</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="dropdown-item" href="#">Black PP & PPCP</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Black BOD</a></li>
+              <li><a class="dropdown-item" href="#">Black BOD (Super Extra Z Black)</a></li>
+              <li><a class="dropdown-item" href="#">Black PPCP</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
       <li><a href="#" class="nav-link px-2 link-dark">Gallery</a></li>
@@ -96,8 +262,7 @@
 
     <div class="col-md-3 text-end">
       <span style="vertical-align: middle;">☎️ +91-9416225555</span>
-  </div>
-  
+    </div>
   </header>
 </div>
 
@@ -106,24 +271,17 @@
     <span style="color: black;">About</span>
     <span style="color: orange;">Us</span>
   </h1>
-  
-  
   <p class="lead mb-2 textCentre">Leading Producer, Distributor, and Global Supplier of</p>
   <h3 class="mb-3 textCentre"><span style="color: orange;">RECYCLED PP GRANULES</span> | MILKY CP GRANULES | <span style="color: orange;">COLOR PPCP GRANULES</span></h3>
   <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"></div>
 </div>
 
 <div class="container">
-  <div class="row align-items-center"> <!-- Wrap image and text in a row and align items in center -->
+  <div class="row align-items-center">
     <div class="col-lg-5 col-md-6 col-sm-12 col-12">
       <div class="about_img_main_div">
         <div class="about_img_box first_big">
           <img src="./product-2.jpg" alt="" class="img-fluid first_big">
-          <!-- overlay img -->
-          <div class="about_overlay_box second_small" style="display: none;">
-            <img src="./product-2.jpg" alt="" class="img-fluid second_small">
-          </div>
-          <!-- overlay img -->
         </div>
       </div>
     </div>
@@ -133,8 +291,6 @@
         <h3>Offering Quality Assured Range Of All Types of PP Granules, PPCP Plastic Granules, Natural CP Granules, COMPOUNDING, And More.</h3>
         <h4><span style="color: orange;">AN OVERVIEW OF JINDAL POLYMERS</span></h4>
         <p>We specialize in the manufacturing and supply of premium PP and CP Granules, as well as PP Raw Materials, offering a comprehensive range of compounded colors including White, Black, and Natural variants, among others. Our products boast superior quality, crafted meticulously from high-grade plastic raw materials, and are available in diverse grades tailored to meet the specific requirements of our discerning customers. Furthermore, we pride ourselves on offering competitive pricing without compromising on excellence. Explore our extensive selection and experience the epitome of quality and affordability in the realm of plastic materials.</p>
-        <div class="about_btn_div">
-        </div>
       </div>
     </div>
   </div>
@@ -143,99 +299,35 @@
 <div class="album py-5 bg-light">
   <h1 class="heading text-center">Products</h1>
   <div class="container">
-
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="products-container">
       <div class="col">
         <div class="card shadow-sm">
-          <img src="./Colour PPCP/1.png">
-
-          <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-              </div>
-              <small class="text-muted">9 mins</small>
-            </div>
-          </div>
+          <img class="product-image">
         </div>
       </div>
       <div class="col">
         <div class="card shadow-sm">
-          <img src="./Colour PPCP/2.png">
-
-          <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-              </div>
-              <small class="text-muted">9 mins</small>
-            </div>
-          </div>
+          <img class="product-image">
         </div>
       </div>
       <div class="col">
         <div class="card shadow-sm">
-          <img src="./Colour PPCP/3.png">
-          <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-              </div>
-              <small class="text-muted">9 mins</small>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card shadow-sm">
-          <img src="./Colour PPCP/4.png">
-          <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-              </div>
-              <small class="text-muted">9 mins</small>
-            </div>
-          </div>
+          <img class="product-image">
         </div>
       </div>
       <div class="col">
         <div class="card shadow-sm">
-          <img src="./Colour PPCP/5.png">
-          <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-              </div>
-              <small class="text-muted">9 mins</small>
-            </div>
-          </div>
+          <img class="product-image">
         </div>
       </div>
       <div class="col">
         <div class="card shadow-sm">
-          <img src="./Colour PPCP/6.png">
-          <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-              </div>
-              <small class="text-muted">9 mins</small>
-            </div>
-          </div>
+          <img class="product-image">
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img class="product-image">
         </div>
       </div>
     </div>
@@ -244,57 +336,42 @@
 <section class="one_stop_solution">
   <div class="container">
     <div class="row justify-content-center align-items-center">
-      <!-- col start -->
       <div class="col-lg-4 col-md-6 col-sm-12 col-12">
         <div class="one_stop_img_div">
           <img src="./Picsart_24-04-17_13-59-15-536.png" alt="" class="img-fluid">
         </div>
       </div>
-      <!-- col end -->
-
-       <!-- col start -->
-       <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
         <div class="one_stop_txt_div">
          <h3>Your <span>One-Stop Solution</span> for Sustainable Plastic Scrap Trading Needs.</h3>
-
          <ul>
           <li> <i class="bx bx-spa"></i> Eco-Friendly Innovation, Unmatched Performance.</li>
           <li> <i class="bx bx-spa"></i> Premium Quality, With Great Versatility.</li>
           <li> <i class="bx bx-spa"></i> Affordable Excellence, Delivered to Your Doorstep Across India.</li>
          </ul>
         </div>
-
-        <div class="about_btn_div">
-          </div>
       </div>
-      <!-- col end -->
       <section class=" mt-4 making_section">
         <div class=" textCentre container">
           <div class="row justify-content-center">
-            <!-- col start -->
              <div class="col-lg-10 col-md-12 col-sm-12 col-12">
               <div class="making_main_txt_div">
                 <h3> Making a <span>difference to the world</span> we live in!</h3>
                 <p>Small actions can lead to big changes. By following the simple principles of reduce, reuse, and recycle, we can all play a part in preserving our planet. Let's start by cutting down on waste, finding creative ways to repurpose items, and making sure to recycle whenever possible. Together, our collective efforts can make a world of difference for generations to come.</p>
               </div>
              </div>
-            <!-- col end -->
           </div>
         </div>
       </section>
-
     </div>
   </div>
 </section>
 <section class="recycle_div_icon">
   <div class="textCentre container">
-    <!-- haed ti recycle  -->
     <div class="recycle_head_title">
     <h2> <img src="assets/images/iconimg01.png" alt="" class="img-fluid"> Recycle <span>today</span> for a better <span>tomorrow</span></h2>
     </div>
-    <!-- end -->
     <div class="row justify-content-center">
-      <!-- col start  -->
       <div class="col-lg-2 col-md-3 col-sm-4 col-6">
      <div class="recycle_icon_div">
       <div class="recycle_img_div">
@@ -303,9 +380,6 @@
     <h5>Use Recycled Materials</h5>
      </div>
       </div>
-      <!-- col end -->
-
-      <!-- col start  -->
       <div class="col-lg-2 col-md-3 col-sm-4 col-6">
      <div class="recycle_icon_div">
       <div class="recycle_img_div">
@@ -314,10 +388,7 @@
     <h5>Dump Collection</h5>
      </div>
       </div>
-      <!-- col end -->
-
-<!-- col start  -->
-<div class="col-lg-2 col-md-3 col-sm-4 col-6">
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6">
      <div class="recycle_icon_div">
       <div class="recycle_img_div">
         <img src="assets/images/mk03.png" alt="" class="img-fluid">
@@ -325,9 +396,6 @@
              <h5>No Landfilling</h5>
      </div>
       </div>
-      <!-- col end -->
-
-      <!-- col start  -->
       <div class="col-lg-2 col-md-3 col-sm-4 col-6">
      <div class="recycle_icon_div">
       <div class="recycle_img_div">
@@ -336,9 +404,6 @@
          <h5>Hot washed 3 times with industrial chemical </h5>
      </div>
       </div>
-      <!-- col end -->
-
-      <!-- col start  -->
       <div class="col-lg-2 col-md-3 col-sm-4 col-6">
      <div class="recycle_icon_div">
       <div class="recycle_img_div">
@@ -347,146 +412,151 @@
           <h5>Sorting &amp; Granulating</h5>
      </div>
       </div>
-      <!-- col end -->
-
-
     </div>
   </div>
 </section>
 <br>
 <div class="orange-line"></div>
 
-
-
-
-<!-- Remove the container if you want to extend the Footer to full width. -->
 <div class="container my-5">
-  <!-- Footer -->
-  <footer
-          class="text-center text-lg-start text-dark"
-          style="background-color: white"
-          >
-    <!-- Section: Social media -->
-    <section
-             class="d-flex justify-content-between p-4 text-white"
-             style="background-color: orange"
-             >
-      <!-- Left -->
+  <footer class="text-center text-lg-start text-dark" style="background-color: white">
+    <section class="d-flex justify-content-between p-4 text-white" style="background-color: orange">
       <div class="me-5">
         <span>Get connected with us on social networks:</span>
       </div>
-      <!-- Left -->
-
-      <!-- Right -->
       <div>
         <a href="" class="text-white me-4">
           <i class="fab fa-facebook-f"></i>
         </a>
       </div>
-      <!-- Right -->
     </section>
-    <!-- Section: Social media -->
-
-    <!-- Section: Links  -->
     <section class="">
       <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
         <div class="row mt-3">
-          <!-- Grid column -->
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <!-- Content -->
             <h6 class="text-uppercase fw-bold">JINDAL POLYMERS</h6>
-            <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px; background-color: #7c4dff; height: 2px"
-                />
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px">
             <p>
               We specialize in the manufacturing and supply of premium PP and CP Granules, as well as PP Raw Materials, offering a comprehensive range of compounded colors including White, Black, and Natural variants, among others.
             </p>
           </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
             <h6 class="text-uppercase fw-bold">Quick Links</h6>
-            <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px; background-color: #7c4dff; height: 2px"
-                />
-            <p>
-              <a href="#!" class="text-dark">Home</a>
-            </p>
-            <p>
-              <a href="#!" class="text-dark">About Us</a>
-            </p>
-            <p>
-              <a href="#!" class="text-dark">Gallery</a>
-            </p>
-            <p>
-              <a href="#!" class="text-dark">Contact Us</a>
-            </p>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px">
+            <p><a href="#!" class="text-dark">Home</a></p>
+            <p><a href="#!" class="text-dark">About Us</a></p>
+            <p><a href="#!" class="text-dark">Gallery</a></p>
+            <p><a href="#!" class="text-dark">Contact Us</a></p>
           </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
             <h6 class="text-uppercase fw-bold">Products</h6>
-            <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px; background-color: #7c4dff; height: 2px"
-                />
-            <p>
-              <a href="#!" class="text-dark">Colour PPCP</a>
-            </p>
-            <p>
-              <a href="#!" class="text-dark">Colour PP</a>
-            </p>
-            <p>
-              <a href="#!" class="text-dark">Milky Colour PP</a>
-            </p>
-            <p>
-              <a href="#!" class="text-dark">Natural PPCP</a>
-            </p>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px">
+            <p><a href="#!" class="text-dark">Colour PPCP</a></p>
+            <p><a href="#!" class="text-dark">Colour PP</a></p>
+            <p><a href="#!" class="text-dark">Milky Colour PP</a></p>
+            <p><a href="#!" class="text-dark">Natural PPCP</a></p>
           </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
             <h6 class="text-uppercase fw-bold">Contact</h6>
-            <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px; background-color: #7c4dff; height: 2px"
-                />
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px">
             <p><i class="fas fa-home mr-3"></i>Plot No.315 & 311 Block-D,Sector-5,DSIIDC,Bawana,Delhi-39</p>
             <p><i class="fas fa-envelope mr-3"></i>jindalgreat@gmail.com</p>
             <p><i class="fas fa-phone mr-3"></i> +91 9416225555</p>
             <p><i class="fas fa-print mr-3"></i> +91 9416325555</p>
           </div>
-          <!-- Grid column -->
         </div>
-        <!-- Grid row -->
       </div>
     </section>
-    <!-- Section: Links  -->
-
-    <!-- Copyright -->
-    <div
-         class="text-center p-3"
-         style="background-color: orange"
-         >
+    <div class="text-center p-3" style="background-color: orange">
       © 2024 Copyright:
-      <a class="text-dark" href="https://mdbootstrap.com/"
-         >jindalpolymers.in</a
-        >
+      <a class="text-dark" href="https://mdbootstrap.com/">jindalpolymers.in</a>
     </div>
-    <!-- Copyright -->
   </footer>
-  <!-- Footer -->
 </div>
-<!-- End of .container -->
 <div class="orange-line"></div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const productFolders = [
+      { name: "Black PP & PPCP", images: 3 },
+      { name: "Colour PP", images: 11 },
+      { name: "Colour PPCP Special for Tasla & Tgari", images: 4 },
+      { name: "Milky Colour PP", images: 8 },
+      { name: "Milky PPCP & PP", images: 3 },
+      { name: "Natural PPCP", images: 6 },
+      { name: "NPP", images: 3 },
+      { name: "Colour PPCP", images: 16 }
+    ];
+  
+    let allImages = [];
+    productFolders.forEach(folder => {
+      for (let i = 1; i <= folder.images; i++) {
+        allImages.push(`./${folder.name}/${i}.png`);
+      }
+    });
+  
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+  
+    const shuffledImages = shuffleArray([...allImages]).slice(0, 6);
+  
+    const productImages = document.querySelectorAll('.product-image');
+    productImages.forEach((img, index) => {
+      if (shuffledImages[index]) {
+        img.src = shuffledImages[index];
+        img.alt = shuffledImages[index].split('/')[1];
+        
+        img.closest('.card').addEventListener('click', function() {
+          console.log('Selected product:', shuffledImages[index]);
+        });
+      }
+    });
+  
+    const cards = document.querySelectorAll('.card.shadow-sm');
+    cards.forEach(card => {
+      card.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
+      card.style.cursor = 'pointer';
+      
+      card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-5px)';
+        this.style.boxShadow = '0 10px 20px rgba(0,0,0,0.15)';
+      });
+      
+      card.addEventListener('mouseleave', function() {
+        this.style.transform = '';
+        this.style.boxShadow = '';
+      });
+    });
+
+    document.querySelectorAll('.dropdown-submenu a').forEach(function(elem) {
+      elem.addEventListener('click', function(e) {
+        if (window.innerWidth < 992) {
+          e.preventDefault();
+          const submenu = this.nextElementSibling;
+          if (submenu.style.display === 'block') {
+            submenu.style.display = 'none';
+          } else {
+            document.querySelectorAll('.dropdown-submenu .dropdown-menu').forEach(function(menu) {
+              menu.style.display = 'none';
+            });
+            submenu.style.display = 'block';
+          }
+        }
+      });
+    });
+
+    document.addEventListener('click', function(e) {
+      if (!e.target.matches('.dropdown-toggle') && !e.target.closest('.dropdown-menu')) {
+        document.querySelectorAll('.dropdown-menu').forEach(function(menu) {
+          menu.style.display = '';
+        });
+      }
+    });
+  });
+</script>
 </body>
 </html>
