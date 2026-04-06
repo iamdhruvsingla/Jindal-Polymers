@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red PP Granules - Jindal Polymers</title>
+    <link rel="icon" type="image/x-icon" href="Untitled-1.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+      .cardOrange {
+        background-color: rgb(214, 139, 0);
+      }
+      .cardContent {
+        text-align: center;
+        color: aqua;
+      }
+      .orange-line {
+        width: 100%;
+        height: 5px;
+        background-color: orange;
+      }
+      .textCentre {
+        text-align: center;
+      }
+      .about_img_box.first_big {
+        width: 70%;
+        padding-left: 30px;
+      }
+      .about_img_box.first_big img {
+        width: 100%;
+      }
+      .heading {
+        text-align: center;
+      }
+      .nav .dropdown {
+        position: static;
+        display: inline-block;
+      }
+
+      .nav .dropdown-menu {
+          display: none;
+          position: absolute;
+          background-color: white;
+          min-width: 250px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1001;
+          left: 0;
+          top: 100%;
+          margin-top: 0;
+          border: 1px solid rgba(0,0,0,0.15);
+          padding: 5px 0;
+          width: auto;
+      }
+
+      .nav .dropdown:hover .dropdown-menu {
+          display: block;
+      }
+
+      .nav .dropdown-toggle {
+          background: none;
+          border: none;
+          color: #212529;
+          padding: 8px 16px;
+          cursor: pointer;
+      }
+
+      .nav .dropdown-toggle:hover {
+          color: orange;
+      }
+
+      .dropdown-item {
+          padding: 8px 16px;
+          color: #212529;
+          display: block;
+          clear: both;
+          white-space: nowrap;
+          position: relative;
+          border-bottom: 1px solid #f0f0f0;
+          margin: 0 5px;
+          transition: all 0.2s ease;
+      }
+
+      .dropdown-menu > li:last-child .dropdown-item {
+          border-bottom: none;
+      }
+
+      .dropdown-item:hover {
+          background-color: orange;
+          color: white;
+      }
+
+      .nav .dropdown-submenu {
+          position: relative;
+      }
+
+      .nav .dropdown-menu .dropdown-submenu .dropdown-menu {
+          position: absolute;
+          top: 0;
+          left: 100%;
+          margin-left: 0;
+          display: none;
+          min-width: 200px;
+          border-left: 1px solid #f0f0f0;
+      }
+
+      .nav .dropdown-menu .dropdown-submenu:hover > .dropdown-menu {
+          display: block;
+      }
+
+      .nav .dropdown-menu .dropdown-submenu > a:after {
+          content: "▸";
+          float: right;
+          margin-left: 10px;
+      }
+
+      .nav .dropdown-menu .dropdown-submenu:hover > a {
+          background-color: orange;
+          color: white;
+      }
+
+      .dropdown-submenu .dropdown-menu .dropdown-item {
+          border-bottom: 1px solid #f0f0f0;
+      }
+
+      .dropdown-submenu .dropdown-menu > li:last-child .dropdown-item {
+          border-bottom: none;
+      }
+
+      .dropdown-item:hover {
+          border-bottom-color: rgba(255,255,255,0.3);
+      }
+
+      .dropdown-item:hover + .dropdown-item {
+          border-top-color: rgba(255,255,255,0.3);
+      }
+
+      .dropdown-menu:hover {
+          display: block !important;
+      }
+
+      .nav {
+          position: relative;
+          z-index: 1000;
+      }
+      .about_img_box.first_big {
+        width: 90%; /* Increased from 70% */
+        padding-left: 0; /* Removed the left padding */
+        margin-right: -50px; /* Pulls the image closer to the text */
+      }
+
+      /* Add this new rule to make the image itself larger */
+      .about_img_box.first_big img {
+          width: 100%;
+          max-height: 400px; /* Adjust as needed */
+          object-fit: cover;
+      }
+      
+      /* Product detail page specific styles */
+      .product-header {
+          background-color: #f8f9fa;
+          padding: 40px 0;
+          margin-bottom: 30px;
+      }
+      
+      .product-detail-container {
+          margin-bottom: 40px;
+      }
+      
+      .product-image-container {
+          padding-right: 30px;
+      }
+      
+      .product-image {
+          max-width: 100%;
+          height: auto;
+          border-radius: 5px;
+          box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      }
+      
+      .product-title {
+          color: orange;
+          margin-bottom: 20px;
+          font-size: 2.2rem;
+      }
+      
+      .product-subtitle {
+          color: #333;
+          margin-bottom: 20px;
+          font-size: 1.2rem;
+      }
+      
+      .product-description {
+          margin-bottom: 20px;
+          line-height: 1.8;
+          color: #555;
+      }
+      
+      .product-features {
+          margin-bottom: 30px;
+      }
+      
+      .feature-list {
+          list-style-type: none;
+          padding-left: 0;
+      }
+      
+      .feature-list li {
+          padding: 8px 0;
+          border-bottom: 1px solid #eee;
+      }
+      
+      .feature-list li:last-child {
+          border-bottom: none;
+      }
+      
+      .feature-icon {
+          color: orange;
+          margin-right: 10px;
+      }
+      
+      .back-to-products {
+          color: orange;
+          text-decoration: none;
+          font-weight: bold;
+          display: inline-block;
+          margin-top: 20px;
+      }
+      
+      .back-to-products:hover {
+          text-decoration: underline;
+      }
+      
+      .specifications-table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-bottom: 30px;
+      }
+      
+      .specifications-table th, 
+      .specifications-table td {
+          padding: 12px 15px;
+          border: 1px solid #ddd;
+          text-align: left;
+      }
+      
+      .specifications-table th {
+          background-color: #f8f9fa;
+          color: #333;
+      }
+      
+      .specifications-table tr:nth-child(even) {
+          background-color: #f9f9f9;
+      }
+    </style>
+</head>
+<body>
+<div class="orange-line"></div>
+<div class="container">
+  <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom text-center">
+    <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+      <img height="50px" src="./Untitled-1.png" alt="logo">
+      <h2>Jindal Polymers</h2>
+    </a>
+
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+      <li><a href="index.html" class="nav-link px-2 link-dark">Home</a></li>
+      <li><a href="aboutus.html" class="nav-link px-2 link-dark">About Us</a></li>
+      <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton">
+          Products
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li class="dropdown-submenu">
+            <a class="dropdown-item" href="colourpp.html">Colour PP</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="product-red-pp.html">Red</a></li>
+              <li><a class="dropdown-item" href="product-malta-pp.html">Malta</a></li>
+              <li><a class="dropdown-item" href="product-parrot-green-pp.html">Parrot Green</a></li>
+              <li><a class="dropdown-item" href="product-sudan-blue-pp.html">Sudan Blue</a></li>
+              <li><a class="dropdown-item" href="product-grey-pp.html">Grey</a></li>
+              <li><a class="dropdown-item" href="product-silver-pp.html">Silver</a></li>
+              <li><a class="dropdown-item" href="product-coffee-pp.html">Coffee</a></li>
+              <li><a class="dropdown-item" href="product-purple-pp.html">Purple</a></li>
+              <li><a class="dropdown-item" href="product-yellow-pp.html">Yellow</a></li>
+              <li><a class="dropdown-item" href="product-sea-green-pp.html">Sea Green</a></li>
+              <li><a class="dropdown-item" href="product-military-green-pp.html">Military Green</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="dropdown-item" href="colourppcp.html">Colour PPCP</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Red</a></li>
+              <li><a class="dropdown-item" href="#">Orange</a></li>
+              <li><a class="dropdown-item" href="#">Sea Green</a></li>
+              <li><a class="dropdown-item" href="#">Light Blue</a></li>
+              <li><a class="dropdown-item" href="#">Sudan Blue</a></li>
+              <li><a class="dropdown-item" href="#">Baby Blue</a></li>
+              <li><a class="dropdown-item" href="#">Royal Blue</a></li>
+              <li><a class="dropdown-item" href="#">Pink</a></li>
+              <li><a class="dropdown-item" href="#">Lemon Yellow</a></li>
+              <li><a class="dropdown-item" href="#">Golden Yellow</a></li>
+              <li><a class="dropdown-item" href="#">Floroscent Green</a></li>
+              <li><a class="dropdown-item" href="#">Dark Green</a></li>
+              <li><a class="dropdown-item" href="#">Light Pink</a></li>
+              <li><a class="dropdown-item" href="#">Grey</a></li>
+              <li><a class="dropdown-item" href="#">Ivory</a></li>
+              <li><a class="dropdown-item" href="#">Purple</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="dropdown-item" href="colourppcpspecial.html">Colour PPCP Special for Tasla & Tgari</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Red</a></li>
+              <li><a class="dropdown-item" href="#">Sudan Blue</a></li>
+              <li><a class="dropdown-item" href="#">Parrot Green</a></li>
+              <li><a class="dropdown-item" href="#">Orange</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="dropdown-item" href="milkyppcp&pp.html">Milky PPCP & PP</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Milky PPCP</a></li>
+              <li><a class="dropdown-item" href="#">Milky PP</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="dropdown-item" href="milkycolourpp.html">Milky Colour PP</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Lemon Yellow</a></li>
+              <li><a class="dropdown-item" href="#">Pink</a></li>
+              <li><a class="dropdown-item" href="#">Fluroscent Green</a></li>
+              <li><a class="dropdown-item" href="#">Orange</a></li>
+              <li><a class="dropdown-item" href="#">Sea Green</a></li>
+              <li><a class="dropdown-item" href="#">Light Blue</a></li>
+              <li><a class="dropdown-item" href="#">Light Pink</a></li>
+              <li><a class="dropdown-item" href="#">Yellow</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="dropdown-item" href="naturalppcp.html">Natural PPCP</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">WB</a></li>
+              <li><a class="dropdown-item" href="#">CP4020</a></li>
+              <li><a class="dropdown-item" href="#">CPL</a></li>
+              <li><a class="dropdown-item" href="#">CPJ</a></li>
+              <li><a class="dropdown-item" href="#">CP4080</a></li>
+              <li><a class="dropdown-item" href="#">WBO</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="dropdown-item" href="npp.html">NPP</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">NPP</a></li>
+              <li><a class="dropdown-item" href="#">NPP (Super)</a></li>
+              <li><a class="dropdown-item" href="#">NPP (Chinidana)</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="dropdown-item" href="blackpp&ppcp.html">Black PP & PPCP</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Black BOD</a></li>
+              <li><a class="dropdown-item" href="#">Black BOD (Super Extra Z Black)</a></li>
+              <li><a class="dropdown-item" href="#">Black PPCP</a></li>
+            </ul>
+          </li>
+          <li class=""dropdown-submenu>
+            <a class="dropdown-item" href="#">All Products</a>
+          </li>
+          </li>
+        </ul>
+      </div>
+      <li><a href="#" class="nav-link px-2 link-dark">Gallery</a></li>
+      <li><a href="contactus.html" class="nav-link px-2 link-dark">Contact Us</a></li>
+    </ul>
+
+    <div class="col-md-3 text-end">
+      <span style="vertical-align: middle;">☎️ +91-9416225555</span>
+    </div>
+  </header>
+</div>
+
+<!-- Product Detail Content -->
+<div class="product-header">
+    <div class="container text-center">
+        <h1><span style="color: black;">Sudan Blue</span> <span style="color: orange;">PP Granules</span></h1>
+        <p class="lead">Premium Quality Polypropylene Granules in Deep Sudan Blue Color</p>
+    </div>
+</div>
+
+<div class="container product-detail-container">
+    <div class="row">
+        <!-- Product Image -->
+        <div class="col-md-5 product-image-container">
+            <img src="./Colour PP/4.png" alt="Sudan Blue PP Granules" class="product-image img-fluid">
+        </div>
+        
+        <!-- Product Details -->
+        <div class="col-md-7">
+            <h2 class="product-title">Sudan Blue PP Granules</h2>
+            <h4 class="product-subtitle">Rich, Deep Blue for Professional Applications</h4>
+            
+            <div class="product-description">
+                <p>Our Sudan Blue PP Granules feature an intense, deep blue color that conveys professionalism and quality. This premium shade is particularly valued in industrial and commercial applications where a sophisticated appearance is desired.</p>
+                
+                <p>The Sudan Blue pigment offers exceptional color depth and consistency, with excellent lightfastness properties that prevent fading over time. These granules are widely used in packaging, containers, and technical components where color integrity is crucial.</p>
+                
+                <p>Jindal Polymers' Sudan Blue PP Granules are engineered for superior processing performance, ensuring smooth molding and extrusion with consistent coloration throughout production runs.</p>
+            </div>
+            
+            <div class="product-features">
+                <h5>Key Features:</h5>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check feature-icon"></i> Deep, rich Sudan blue color with excellent depth</li>
+                    <li><i class="fas fa-check feature-icon"></i> Superior lightfastness and UV resistance</li>
+                    <li><i class="fas fa-check feature-icon"></i> Consistent coloration throughout material</li>
+                    <li><i class="fas fa-check feature-icon"></i> Excellent thermal stability during processing</li>
+                    <li><i class="fas fa-check feature-icon"></i> Good mechanical properties for durable applications</li>
+                    <li><i class="fas fa-check feature-icon"></i> Available in standard and custom melt flow indexes</li>
+                </ul>
+            </div>
+            
+            <a href="colourpp.html" class="back-to-products">← Back to Colour PP Products</a>
+        </div>
+    </div>
+    
+    <!-- Applications Section -->
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <h4 class="mb-4" style="color: orange;">Common Applications</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Industrial Containers</h5>
+                            <p class="card-text">Ideal for chemical drums, storage bins, and industrial packaging where the deep blue color provides a professional appearance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Consumer Packaging</h5>
+                            <p class="card-text">Used in premium cosmetic packaging, detergent bottles, and other consumer products where color consistency is critical.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Technical Components</h5>
+                            <p class="card-text">Suitable for automotive parts, electronic housings, and other technical applications requiring durable coloration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer (same as home page) -->
+<div class="orange-line"></div>
+
+<div class="container my-5">
+  <footer class="text-center text-lg-start text-dark" style="background-color: white">
+    <section class="d-flex justify-content-between p-4 text-white" style="background-color: orange">
+      <div class="me-5">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <div>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
+    </section>
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold">JINDAL POLYMERS</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px">
+            <p>
+              We specialize in the manufacturing and supply of premium PP and CP Granules, as well as PP Raw Materials, offering a comprehensive range of compounded colors including White, Black, and Natural variants, among others.
+            </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold">Quick Links</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px">
+            <p><a href="index.html" class="text-dark">Home</a></p>
+            <p><a href="aboutus.html" class="text-dark">About Us</a></p>
+            <p><a href="#" class="text-dark">Gallery</a></p>
+            <p><a href="contactus.html" class="text-dark">Contact Us</a></p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold">Products</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px">
+            <p><a href="#" class="text-dark">Colour PPCP</a></p>
+            <p><a href="#" class="text-dark">Colour PP</a></p>
+            <p><a href="#" class="text-dark">Milky Colour PP</a></p>
+            <p><a href="#" class="text-dark">Natural PPCP</a></p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px">
+            <p><i class="fas fa-home mr-3"></i>Plot No.315 & 311 Block-D,Sector-5,DSIIDC,Bawana,Delhi-39</p>
+            <p><i class="fas fa-envelope mr-3"></i>jindalgreat@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> +91 9416225555</p>
+            <p><i class="fas fa-print mr-3"></i> +91 9416325555</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="text-center p-3" style="background-color: orange">
+      © 2025 Copyright:
+      <a class="text-dark" href="https://jindalpolymers.in/">jindalpolymers.in</a>
+    </div>
+  </footer>
+</div>
+<div class="orange-line"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.dropdown-submenu a').forEach(function(elem) {
+      elem.addEventListener('click', function(e) {
+        if (window.innerWidth < 992) {
+          e.preventDefault();
+          const submenu = this.nextElementSibling;
+          if (submenu.style.display === 'block') {
+            submenu.style.display = 'none';
+          } else {
+            document.querySelectorAll('.dropdown-submenu .dropdown-menu').forEach(function(menu) {
+              menu.style.display = 'none';
+            });
+            submenu.style.display = 'block';
+          }
+        }
+      });
+    });
+
+    document.addEventListener('click', function(e) {
+      if (!e.target.matches('.dropdown-toggle') && !e.target.closest('.dropdown-menu')) {
+        document.querySelectorAll('.dropdown-menu').forEach(function(menu) {
+          menu.style.display = '';
+        });
+      }
+    });
+  });
+</script>
+</body>
+</html>

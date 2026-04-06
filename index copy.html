@@ -6,19 +6,7 @@
     <title>Jindal Polymers</title>
     <link rel="icon" type="image/x-icon" href="Untitled-1.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
-      body { font-family: 'Inter', sans-serif; background-color: #ffffff; }
-      .hero-section { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('./product-2.jpg') center/cover; padding: 80px 0; color: white; position: relative; margin-bottom: 60px; }
-      .hero-glass { background: rgba(255,255,255,0.08); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); padding: 50px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
-      .filter-btn { background: white; border: 2px solid orange; color: #333; padding: 8px 20px; border-radius: 30px; margin: 4px; font-size: 0.95rem; font-weight: 600; transition: all 0.3s; box-shadow: 0 4px 6px rgba(0,0,0,0.05); cursor:pointer; }
-      .filter-btn.active, .filter-btn:hover { background: orange; color: white; transform: translateY(-3px); box-shadow: 0 8px 15px rgba(255, 140, 0, 0.3); }
-      
-      .swiper-pagination-bullet-active { background: orange !important; }
-      
       .cardOrange {
         background-color: rgb(214, 139, 0);
       }
@@ -293,20 +281,7 @@
   </header>
 </div>
 
-<section class="hero-section text-center" data-aos="fade-in">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-10 hero-glass" data-aos="zoom-in" data-aos-delay="200">
-        <h1 class="display-3 fw-bolder mb-4">Premium <span style="color:orange;">Polymers & Granules</span></h1>
-        <p class="lead mb-5" style="font-size: 1.3rem;">Engineered for durability. Trusted by global manufacturers. Discover our comprehensive range of PPCP, Natural, and Milky composites today.</p>
-        <button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})" class="btn btn-outline-light btn-lg px-4 me-3" style="border-radius:30px; font-weight:bold; border-width: 2px;">Learn More</button>
-        <button onclick="document.getElementById('gallery').scrollIntoView({behavior:'smooth'})" class="btn btn-lg px-4" style="background:orange; color:white; border-radius:30px; font-weight:bold;">Explore Products</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="container text-center" id="about" data-aos="fade-up">
+<div class="container text-center">
   <h1 class="textCentre">
     <span style="color: black;">About</span>
     <span style="color: orange;">Us</span>
@@ -317,16 +292,16 @@
 </div>
 
 <div class="container">
-  <div class="row align-items-center mt-4">
-    <div class="col-lg-5 col-md-6 col-sm-12 col-12" data-aos="fade-right">
+  <div class="row align-items-center">
+    <div class="col-lg-5 col-md-6 col-sm-12 col-12">
       <div class="about_img_main_div">
-        <div class="about_img_box first_big shadow-lg" style="border-radius: 15px; overflow:hidden;">
+        <div class="about_img_box first_big">
           <img src="./product-2.jpg" alt="" class="img-fluid first_big">
         </div>
       </div>
     </div>
 
-    <div class="col-lg-7 col-md-6 col-sm-12 col-12" data-aos="fade-left" data-aos-delay="200">
+    <div class="col-lg-7 col-md-6 col-sm-12 col-12">
       <div class="about_content_div">
         <h3>Offering Quality Assured Range Of All Types of PP Granules, PPCP Plastic Granules, Natural CP Granules, COMPOUNDING, And More.</h3>
         <h4><span style="color: orange;">AN OVERVIEW OF JINDAL POLYMERS</span></h4>
@@ -336,50 +311,68 @@
   </div>
 </div>
 
-<div class="album py-5 bg-white" id="gallery" style="margin-top: 60px;">
-  <h1 class="heading text-center mb-4" data-aos="fade-up" style="font-weight: 800; font-size: 3rem;"><span style="color: black;">Product</span> <span style="color: orange;">Gallery</span></h1>
-  <p class="text-center text-muted mb-5" data-aos="fade-up" data-aos-delay="100">Click a category to instantly browse all variants through the interactive slider.</p>
-  
-  <div class="container text-center mb-5" data-aos="fade-up" data-aos-delay="200" id="filter-buttons">
-    <!-- Injected securely via Scripts at runtime -->
-  </div>
-  
-  <div class="container pb-5" data-aos="fade-up" data-aos-delay="300">
-    <div class="swiper mySwiper" style="padding: 20px 10px 60px 10px;">
-      <div class="swiper-wrapper" id="swiper-container">
-        <!-- Injected securely via Scripts at runtime -->
+<div class="album py-5 bg-light">
+  <h1 class="heading text-center">Products</h1>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="products-container">
+      <div class="col">
+        <div class="card shadow-sm">
+          <img class="product-image">
+        </div>
       </div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-next" style="color: orange;"></div>
-      <div class="swiper-button-prev" style="color: orange;"></div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img class="product-image">
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img class="product-image">
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img class="product-image">
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img class="product-image">
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img class="product-image">
+        </div>
+      </div>
     </div>
   </div>
 </div>
-<section class="one_stop_solution py-5">
+<section class="one_stop_solution">
   <div class="container">
     <div class="row justify-content-center align-items-center">
-      <div class="col-lg-4 col-md-6 col-sm-12 col-12" data-aos="zoom-in">
-        <div class="one_stop_img_div shadow-lg" style="border-radius:15px; overflow:hidden;">
+      <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+        <div class="one_stop_img_div">
           <img src="./Picsart_24-04-17_13-59-15-536.png" alt="" class="img-fluid">
         </div>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-12" data-aos="fade-left" data-aos-delay="200">
-        <div class="one_stop_txt_div ps-md-5 mt-4 mt-md-0">
-         <h3 style="font-weight:700; margin-bottom:20px;">Your <span style="color:orange;">One-Stop Solution</span> for Sustainable Plastic Needs.</h3>
-         <ul style="list-style:none; padding:0; font-size:1.1rem; line-height:1.8;">
-          <li><i class="fas fa-check-circle me-2" style="color:orange;"></i> Eco-Friendly Innovation, Unmatched Performance.</li>
-          <li><i class="fas fa-check-circle me-2" style="color:orange;"></i> Premium Quality, With Great Versatility.</li>
-          <li><i class="fas fa-check-circle me-2" style="color:orange;"></i> Affordable Excellence, Delivered to Your Doorstep Across India.</li>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="one_stop_txt_div">
+         <h3>Your <span>One-Stop Solution</span> for Sustainable Plastic Scrap Trading Needs.</h3>
+         <ul>
+          <li> <i class="bx bx-spa"></i> Eco-Friendly Innovation, Unmatched Performance.</li>
+          <li> <i class="bx bx-spa"></i> Premium Quality, With Great Versatility.</li>
+          <li> <i class="bx bx-spa"></i> Affordable Excellence, Delivered to Your Doorstep Across India.</li>
          </ul>
         </div>
       </div>
-      <section class="mt-5 pt-4 making_section w-100">
-        <div class="textCentre container" data-aos="fade-up">
+      <section class=" mt-4 making_section">
+        <div class=" textCentre container">
           <div class="row justify-content-center">
              <div class="col-lg-10 col-md-12 col-sm-12 col-12">
-              <div class="making_main_txt_div bg-white p-5 shadow-sm" style="border-radius:15px; border-top: 4px solid orange;">
-                <h3 style="font-weight:700; margin-bottom:20px;"> Making a <span style="color:orange;">difference to the world</span> we live in!</h3>
-                <p class="lead text-muted" style="font-size:1.1rem;">Small actions can lead to big changes. By following the simple principles of reduce, reuse, and recycle, we can all play a part in preserving our planet. Let's start by cutting down on waste, finding creative ways to repurpose items, and making sure to recycle whenever possible. Together, our collective efforts can make a world of difference for generations to come.</p>
+              <div class="making_main_txt_div">
+                <h3> Making a <span>difference to the world</span> we live in!</h3>
+                <p>Small actions can lead to big changes. By following the simple principles of reduce, reuse, and recycle, we can all play a part in preserving our planet. Let's start by cutting down on waste, finding creative ways to repurpose items, and making sure to recycle whenever possible. Together, our collective efforts can make a world of difference for generations to come.</p>
               </div>
              </div>
           </div>
@@ -388,50 +381,50 @@
     </div>
   </div>
 </section>
-<section class="recycle_div_icon bg-white py-5">
+<section class="recycle_div_icon">
   <div class="textCentre container">
-    <div class="recycle_head_title mb-5" data-aos="fade-up">
-    <h2 style="font-weight:800; font-size:2.5rem;"><i class="fas fa-recycle" style="color:#2ecc71; margin-right:15px;"></i>Recycle <span style="color:orange;">today</span> for a better <span style="color:orange;">tomorrow</span></h2>
+    <div class="recycle_head_title">
+    <h2> <img src="assets/images/iconimg01.png" alt="" class="img-fluid"> Recycle <span>today</span> for a better <span>tomorrow</span></h2>
     </div>
-    <div class="row justify-content-center g-4">
-      <div class="col-lg-2 col-md-3 col-sm-4 col-6" data-aos="fade-up" data-aos-delay="100">
-     <div class="recycle_icon_div text-center">
-      <div class="recycle_img_div bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3 shadow-sm" style="width:100px; height:100px;">
-        <img src="mk01.png" alt="" style="width:50px;">
+    <div class="row justify-content-center">
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+     <div class="recycle_icon_div">
+      <div class="recycle_img_div">
+        <img src="assets/images/mk01.png" alt="" class="img-fluid">
       </div>
-    <h5 style="font-size:1rem; font-weight:600;">Use Recycled Materials</h5>
+    <h5>Use Recycled Materials</h5>
      </div>
       </div>
-      <div class="col-lg-2 col-md-3 col-sm-4 col-6" data-aos="fade-up" data-aos-delay="200">
-     <div class="recycle_icon_div text-center">
-      <div class="recycle_img_div bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3 shadow-sm" style="width:100px; height:100px;">
-        <img src="mk02.png" alt="" style="width:50px;">
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+     <div class="recycle_icon_div">
+      <div class="recycle_img_div">
+        <img src="assets/images/mk02.png" alt="" class="img-fluid">
       </div>
-    <h5 style="font-size:1rem; font-weight:600;">Dump Collection</h5>
+    <h5>Dump Collection</h5>
      </div>
       </div>
-      <div class="col-lg-2 col-md-3 col-sm-4 col-6" data-aos="fade-up" data-aos-delay="300">
-     <div class="recycle_icon_div text-center">
-      <div class="recycle_img_div bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3 shadow-sm" style="width:100px; height:100px;">
-        <img src="mk03.png" alt="" style="width:50px;">
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+     <div class="recycle_icon_div">
+      <div class="recycle_img_div">
+        <img src="assets/images/mk03.png" alt="" class="img-fluid">
       </div>
-             <h5 style="font-size:1rem; font-weight:600;">No Landfilling</h5>
+             <h5>No Landfilling</h5>
      </div>
       </div>
-      <div class="col-lg-2 col-md-3 col-sm-4 col-6" data-aos="fade-up" data-aos-delay="400">
-     <div class="recycle_icon_div text-center">
-      <div class="recycle_img_div bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3 shadow-sm" style="width:100px; height:100px;">
-        <img src="mk04.png" alt="" style="width:50px;">
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+     <div class="recycle_icon_div">
+      <div class="recycle_img_div">
+        <img src="assets/images/mk04.png" alt="" class="img-fluid">
       </div>
-         <h5 style="font-size:1rem; font-weight:600;">Hot washed 3 times with chemical</h5>
+         <h5>Hot washed 3 times with industrial chemical </h5>
      </div>
       </div>
-      <div class="col-lg-2 col-md-3 col-sm-4 col-6" data-aos="fade-up" data-aos-delay="500">
-     <div class="recycle_icon_div text-center">
-      <div class="recycle_img_div bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3 shadow-sm" style="width:100px; height:100px;">
-        <img src="mk05.png" alt="" style="width:50px;">
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+     <div class="recycle_icon_div">
+      <div class="recycle_img_div">
+        <img src="assets/images/mk05.png" alt="" class="img-fluid">
       </div>
-          <h5 style="font-size:1rem; font-weight:600;">Sorting &amp; Granulating</h5>
+          <h5>Sorting &amp; Granulating</h5>
      </div>
       </div>
     </div>
@@ -488,13 +481,64 @@
 
 </div>
 <div class="orange-line"></div>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    
-    // Header Dropdown logic
+    const productFolders = [
+      { name: "Black PP & PPCP", images: 3 },
+      { name: "Colour PP", images: 11 },
+      { name: "Colour PPCP Special for Tasla & Tgari", images: 4 },
+      { name: "Milky Colour PP", images: 8 },
+      { name: "Milky PPCP & PP", images: 3 },
+      { name: "Natural PPCP", images: 6 },
+      { name: "NPP", images: 3 },
+      { name: "Colour PPCP", images: 16 }
+    ];
+  
+    let allImages = [];
+    productFolders.forEach(folder => {
+      for (let i = 1; i <= folder.images; i++) {
+        allImages.push(`./${folder.name}/${i}.png`);
+      }
+    });
+  
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+  
+    const shuffledImages = shuffleArray([...allImages]).slice(0, 6);
+  
+    const productImages = document.querySelectorAll('.product-image');
+    productImages.forEach((img, index) => {
+      if (shuffledImages[index]) {
+        img.src = shuffledImages[index];
+        img.alt = shuffledImages[index].split('/')[1];
+        
+        img.closest('.card').addEventListener('click', function() {
+          console.log('Selected product:', shuffledImages[index]);
+        });
+      }
+    });
+  
+    const cards = document.querySelectorAll('.card.shadow-sm');
+    cards.forEach(card => {
+      card.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
+      card.style.cursor = 'pointer';
+      
+      card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-5px)';
+        this.style.boxShadow = '0 10px 20px rgba(0,0,0,0.15)';
+      });
+      
+      card.addEventListener('mouseleave', function() {
+        this.style.transform = '';
+        this.style.boxShadow = '';
+      });
+    });
+
     document.querySelectorAll('.dropdown-submenu a').forEach(function(elem) {
       elem.addEventListener('click', function(e) {
         if (window.innerWidth < 992) {
@@ -519,103 +563,6 @@
         });
       }
     });
-
-    // Swiper Logic
-    const productFolders = [
-      { name: "Colour PP", images: 11 },
-      { name: "Colour PPCP", images: 16 },
-      { name: "Colour PPCP Special for Tasla & Tgari", images: 4 },
-      { name: "Milky Colour PP", images: 8 },
-      { name: "Milky PPCP & PP", images: 3 },
-      { name: "Natural PPCP", images: 6 },
-      { name: "NPP", images: 3 },
-      { name: "Black PP & PPCP", images: 3 }
-    ];
-  
-    const btnContainer = document.getElementById('filter-buttons');
-    const swiperContainer = document.getElementById('swiper-container');
-    let swiper = null;
-    
-    productFolders.forEach((folder, idx) => {
-      const btn = document.createElement('button');
-      btn.className = `filter-btn ${idx === 0 ? 'active' : ''}`;
-      // Clean up the name a bit for UI buttons if needed
-      let label = folder.name;
-      if (label === "Colour PPCP Special for Tasla & Tgari") label = "Special PPCP";
-      btn.textContent = label;
-      
-      btn.onclick = () => renderSwiper(folder, btn);
-      btnContainer.appendChild(btn);
-    });
-
-    function renderSwiper(folder, activeButton) {
-      if(activeButton) {
-        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-        activeButton.classList.add('active');
-      }
-
-      swiperContainer.innerHTML = '';
-      
-      for (let i = 1; i <= folder.images; i++) {
-        const item = document.createElement('div');
-        item.className = 'swiper-slide';
-        item.innerHTML = `
-          <div class="card shadow-sm h-100" style="border-radius:15px; overflow:hidden; border:1px solid #efefef; transition: all 0.3s;">
-            <div style="background-color: #f8f9fa; padding:20px; display:flex; justify-content:center; align-items:center;">
-              <img src="./assets/images/${folder.name}/${i}.png" onerror="this.src='./assets/images/Colour PP/1.png'" alt="${folder.name}" style="width:100%; height:200px; object-fit:contain;">
-            </div>
-            <div class="card-body text-center bg-white border-top">
-               <h5 style="color:orange; font-weight:700; font-size: 1.1rem; margin:0;">${folder.name}</h5>
-            </div>
-          </div>
-        `;
-        swiperContainer.appendChild(item);
-      }
-
-      if(swiper) { swiper.destroy(); }
-      
-      swiper = new Swiper('.mySwiper', {
-        slidesPerView: 1,
-        spaceBetween: 15,
-        mousewheel: { forceToAxis: true },
-        autoplay: { delay: 2500, disableOnInteraction: false },
-        pagination: { el: '.swiper-pagination', clickable: true },
-        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-        breakpoints: {
-          640: { slidesPerView: 2, spaceBetween: 20 },
-          768: { slidesPerView: 3, spaceBetween: 30 },
-          1024: { slidesPerView: 4, spaceBetween: 30 },
-        }
-      });
-    }
-
-    // Default init
-    if (btnContainer.firstElementChild) {
-      renderSwiper(productFolders[0], btnContainer.firstElementChild);
-    }
-    
-    // Hover Effects inside Swiper wrapper using delegation
-    const swwrapper = document.querySelector('.mySwiper');
-    swwrapper.addEventListener('mouseenter', function(e) {
-      if(e.target.closest('.card')) {
-        let cd = e.target.closest('.card');
-        cd.style.transform = 'translateY(-10px)';
-        cd.style.boxShadow = '0 15px 30px rgba(0,0,0,0.1)';
-        cd.style.borderColor = 'orange';
-      }
-    }, true);
-    
-    swwrapper.addEventListener('mouseleave', function(e) {
-      if(e.target.closest('.card')) {
-        let cd = e.target.closest('.card');
-        cd.style.transform = 'translateY(0)';
-        cd.style.boxShadow = '';
-        cd.style.borderColor = '#efefef';
-      }
-    }, true);
-
-    // AOS Init
-    AOS.init({ duration: 800, once: true });
   });
 </script>
 </body>
