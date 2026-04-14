@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
       body { font-family: 'Inter', sans-serif; background-color: #ffffff; }
-      .hero-section { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('./product-2.jpg') center/cover; padding: 80px 0; color: white; position: relative; margin-bottom: 60px; }
-      .hero-glass { background: rgba(255,255,255,0.08); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); padding: 50px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+      .hero-section { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('./product-2.jpg') center/cover; padding: 60px 0; color: white; position: relative; margin-bottom: 45px; }
+      .hero-glass { background: rgba(255,255,255,0.08); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); padding: 40px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
       .filter-btn { background: white; border: 2px solid orange; color: #333; padding: 8px 20px; border-radius: 30px; margin: 4px; font-size: 0.95rem; font-weight: 600; transition: all 0.3s; box-shadow: 0 4px 6px rgba(0,0,0,0.05); cursor:pointer; }
       .filter-btn.active, .filter-btn:hover { background: orange; color: white; transform: translateY(-3px); box-shadow: 0 8px 15px rgba(255, 140, 0, 0.3); }
       
@@ -307,8 +307,8 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-10 hero-glass" data-aos="zoom-in" data-aos-delay="200">
-        <h1 class="display-3 fw-bolder mb-4">Premium <span style="color:orange;">Plastic Dana & PP Granules</span></h1>
-        <p class="lead mb-5" style="font-size: 1.3rem;">Engineered for durability. Trusted by global manufacturers. Discover our comprehensive range of PPCP, Natural, and Milky composites today.</p>
+        <h1 class="display-3 fw-bolder mb-3">Premium <span style="color:orange;">Plastic Dana & PP Granules</span></h1>
+        <p class="lead mb-4" style="font-size: 1.3rem;">Engineered for durability. Trusted by global manufacturers. Discover our comprehensive range of PPCP, Natural, and Milky composites today.</p>
         <button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})" class="btn btn-outline-light btn-lg px-4 me-3" style="border-radius:30px; font-weight:bold; border-width: 2px;">Learn More</button>
         <button onclick="document.getElementById('gallery').scrollIntoView({behavior:'smooth'})" class="btn btn-lg px-4" style="background:orange; color:white; border-radius:30px; font-weight:bold;">Explore Products</button>
       </div>
@@ -316,35 +316,88 @@
   </div>
 </section>
 
-<div class="container text-center" id="about" data-aos="fade-up">
-  <h1 class="textCentre">
-    <span style="color: black;">About</span>
-    <span style="color: orange;">Us</span>
-  </h1>
-  <p class="lead mb-2 textCentre">Leading Producer, Distributor, and Global Supplier of</p>
-  <h3 class="mb-3 textCentre"><span style="color: orange;">RECYCLED PP GRANULES</span> | MILKY CP GRANULES | <span style="color: orange;">COLOR PPCP GRANULES</span></h3>
-  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"></div>
-</div>
+<section id="about" class="py-4" style="background-color: #fafafa; position: relative; overflow: hidden; margin-top: 20px;">
+  <!-- Decorative background elements -->
+  <div style="position: absolute; top: -50px; right: -50px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(255,165,0,0.1) 0%, rgba(255,165,0,0) 70%); border-radius: 50%; z-index: 0;"></div>
+  <div style="position: absolute; bottom: -100px; left: -100px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(0,0,0,0.03) 0%, rgba(0,0,0,0) 70%); border-radius: 50%; z-index: 0;"></div>
 
-<div class="container">
-  <div class="row align-items-center mt-4">
-    <div class="col-lg-5 col-md-6 col-sm-12 col-12" data-aos="fade-right">
-      <div class="about_img_main_div">
-        <div class="about_img_box first_big shadow-lg" style="border-radius: 15px; overflow:hidden;">
-          <img src="./product-2.jpg" alt="Premium Recycled PP Granules manufactured by Jindal Polymers" class="img-fluid first_big">
+  <div class="container" style="position: relative; z-index: 1;">
+    <div class="row align-items-center mb-4">
+      <div class="col-12 text-center" data-aos="fade-up">
+        <span class="badge" style="background-color: rgba(255,165,0,0.1); color: orange; padding: 8px 16px; border-radius: 20px; font-weight: 700; letter-spacing: 1px; margin-bottom: 10px;">WHO WE ARE</span>
+        <h1 style="font-weight: 800; font-size: 3rem; color: #212529;">
+          Crafting <span style="color: orange; position: relative; display: inline-block;">Excellence
+            <svg style="position: absolute; bottom: -10px; left: 0; width: 100%; height: 12px;" viewBox="0 0 100 12" preserveAspectRatio="none">
+              <path d="M0,8 Q50,0 100,8 L100,12 L0,12 Z" fill="rgba(255,165,0,0.2)"/>
+            </svg>
+          </span> in Polymers
+        </h1>
+      </div>
+    </div>
+    
+    <div class="row align-items-center g-4">
+      <!-- Image Composition Column -->
+      <div class="col-lg-6" data-aos="fade-right">
+        <div style="position: relative; padding-right: 30px; padding-bottom: 30px;">
+          <!-- Main Image -->
+          <div style="border-radius: 20px; overflow: hidden; box-shadow: 0 25px 50px rgba(0,0,0,0.1); position: relative; z-index: 2;">
+            <img src="./product-2.jpg" alt="Jindal Polymers Facility" class="img-fluid" style="width: 100%; height: auto; transition: transform 0.5s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+          </div>
+          <!-- Overlapping Card -->
+          <div data-aos="zoom-in" data-aos-delay="300" style="position: absolute; bottom: 0; right: 0; background: white; padding: 25px; border-radius: 15px; box-shadow: 0 15px 35px rgba(0,0,0,0.15); z-index: 3; border-left: 5px solid orange; max-width: 250px;">
+            <div style="display: flex; align-items: center; gap: 15px;">
+              <div style="width: 50px; height: 50px; background: rgba(255,165,0,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-medal" style="color: orange; font-size: 24px;"></i>
+              </div>
+              <div>
+                <h3 style="margin: 0; font-weight: 800; font-size: 1.5rem; color: #212529;">Premium</h3>
+                <p style="margin: 0; font-size: 0.9rem; color: #6c757d; font-weight: 600;">Quality Assured</p>
+              </div>
+            </div>
+          </div>
+          <!-- Decorative Dots -->
+          <div style="position: absolute; top: -20px; left: -20px; z-index: 1;">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <circle fill="rgba(255,165,0,0.3)" cx="5" cy="5" r="3"></circle>
+              </pattern>
+              <rect x="0" y="0" width="100" height="100" fill="url(#dots)"></rect>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text & Features Column -->
+      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+        <h3 style="font-weight: 700; font-size: 2rem; color: #333; margin-bottom: 15px; line-height: 1.3;">
+          Global Leaders in Recycled, Milky & Colour PPCP Granules
+        </h3>
+        <p style="font-size: 1.1rem; color: #555; line-height: 1.8; margin-bottom: 20px;">
+          At Jindal Polymers, we transform high-grade plastic raw materials into industry-leading polymers. Our commitment transcends mere manufacturing; we engineer comprehensive compounding solutions in White, Black, and Natural variants designed precisely for the rigorous demands of modern manufacturers.
+        </p>
+
+        <div class="row g-3 mt-1">
+          <!-- Feature 1 -->
+          <div class="col-sm-6 text-start">
+            <div style="background: white; padding: 20px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.05); transition: all 0.3s;" onmouseover="this.style.boxShadow='0 10px 20px rgba(0,0,0,0.05)'; this.style.transform='translateY(-5px)'" onmouseout="this.style.boxShadow='none'; this.style.transform='translateY(0)'">
+              <i class="fas fa-layer-group mb-3" style="font-size: 2rem; color: orange;"></i>
+              <h5 style="font-weight: 700; font-size: 1.1rem;">Diverse Grading</h5>
+              <p style="font-size: 0.9rem; color: #666; margin: 0; line-height: 1.5;">Tailored specifications to meet distinct industrial applications flawlessly.</p>
+            </div>
+          </div>
+          <!-- Feature 2 -->
+          <div class="col-sm-6 text-start">
+            <div style="background: white; padding: 20px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.05); transition: all 0.3s;" onmouseover="this.style.boxShadow='0 10px 20px rgba(0,0,0,0.05)'; this.style.transform='translateY(-5px)'" onmouseout="this.style.boxShadow='none'; this.style.transform='translateY(0)'">
+              <i class="fas fa-tags mb-3" style="font-size: 2rem; color: orange;"></i>
+              <h5 style="font-weight: 700; font-size: 1.1rem;">Competitive Value</h5>
+              <p style="font-size: 0.9rem; color: #666; margin: 0; line-height: 1.5;">Uncompromising excellence offered at highly competitive market pricing.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="col-lg-7 col-md-6 col-sm-12 col-12" data-aos="fade-left" data-aos-delay="200">
-      <div class="about_content_div">
-        <h3>Offering Quality Assured Range Of All Types of Plastic Dana, PP Granules, PPCP Plastic Granules, Natural CP Granules, COMPOUNDING, And More.</h3>
-        <h4><span style="color: orange;">AN OVERVIEW OF JINDAL POLYMERS</span></h4>
-        <p>We specialize in the manufacturing and supply of premium PP and CP Granules, as well as PP Raw Materials, offering a comprehensive range of compounded colors including White, Black, and Natural variants, among others. Our products boast superior quality, crafted meticulously from high-grade plastic raw materials, and are available in diverse grades tailored to meet the specific requirements of our discerning customers. Furthermore, we pride ourselves on offering competitive pricing without compromising on excellence. Explore our extensive selection and experience the epitome of quality and affordability in the realm of plastic materials.</p>
-      </div>
-    </div>
   </div>
-</div>
+</section>
 
 <div class="album py-5 bg-white" id="gallery" style="margin-top: 60px;">
   <h1 class="heading text-center mb-4" data-aos="fade-up" style="font-weight: 800; font-size: 3rem;"><span style="color: black;">Product</span> <span style="color: orange;">Gallery</span></h1>
@@ -354,7 +407,7 @@
     <!-- Injected securely via Scripts at runtime -->
   </div>
   
-  <div class="container pb-5" data-aos="fade-up" data-aos-delay="300">
+  <div class="container pb-2" data-aos="fade-up" data-aos-delay="300">
     <div class="swiper mySwiper" style="padding: 20px 10px 60px 10px;">
       <div class="swiper-wrapper" id="swiper-container">
         <!-- Injected securely via Scripts at runtime -->
@@ -365,84 +418,192 @@
     </div>
   </div>
 </div>
-<section class="one_stop_solution py-5">
+<section style="background-color: #fff; position: relative; margin-top: 60px; padding-bottom: 80px;">
   <div class="container">
-    <div class="row justify-content-center align-items-center">
-      <div class="col-lg-4 col-md-6 col-sm-12 col-12" data-aos="zoom-in">
-        <div class="one_stop_img_div shadow-lg" style="border-radius:15px; overflow:hidden;">
-          <img src="./Picsart_24-04-17_13-59-15-536.png" alt="High quality Plastic Dana and PPCP raw materials" class="img-fluid">
-        </div>
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+        <span class="text-uppercase fw-bold" style="color: orange; letter-spacing: 2px; font-size: 0.9rem;">SUSTAINABILITY & EXCELLENCE</span>
+        <h2 class="display-5 fw-bold mt-2 mb-4" style="color: #212529;">Your <span style="color: orange;">One-Stop Solution</span> for Modern Plastics</h2>
+        <p class="lead text-muted mb-4">We deliver high-performance polymers while strictly adhering to eco-conscious manufacturing practices. Experience unmatched versatility without the environmental compromise.</p>
+        <ul class="list-unstyled mb-4" style="font-size: 1.1rem; line-height: 2; color: #555;">
+          <li class="d-flex align-items-center mb-2"><i class="fas fa-check-circle fs-5 me-3" style="color: orange;"></i> Eco-Friendly Innovation</li>
+          <li class="d-flex align-items-center mb-2"><i class="fas fa-check-circle fs-5 me-3" style="color: orange;"></i> Premium Quality & Versatility</li>
+          <li class="d-flex align-items-center"><i class="fas fa-check-circle fs-5 me-3" style="color: orange;"></i> Affordable Pan-India Delivery</li>
+        </ul>
+        <a href="#about" class="btn text-white px-4 py-3 fw-bold rounded-pill shadow-sm" style="background: orange; transition: transform 0.3s; display: inline-block;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 10px 20px rgba(255,165,0,0.3)';" onmouseout="this.style.transform='none'; this.style.boxShadow='var(--bs-box-shadow-sm)';">Discover More <i class="fas fa-arrow-right ms-2"></i></a>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-12" data-aos="fade-left" data-aos-delay="200">
-        <div class="one_stop_txt_div ps-md-5 mt-4 mt-md-0">
-         <h3 style="font-weight:700; margin-bottom:20px;">Your <span style="color:orange;">One-Stop Solution</span> for Sustainable Plastic Needs.</h3>
-         <ul style="list-style:none; padding:0; font-size:1.1rem; line-height:1.8;">
-          <li><i class="fas fa-check-circle me-2" style="color:orange;"></i> Eco-Friendly Innovation, Unmatched Performance.</li>
-          <li><i class="fas fa-check-circle me-2" style="color:orange;"></i> Premium Quality, With Great Versatility.</li>
-          <li><i class="fas fa-check-circle me-2" style="color:orange;"></i> Affordable Excellence, Delivered to Your Doorstep Across India.</li>
-         </ul>
-        </div>
-      </div>
-      <section class="mt-5 pt-4 making_section w-100">
-        <div class="textCentre container" data-aos="fade-up">
-          <div class="row justify-content-center">
-             <div class="col-lg-10 col-md-12 col-sm-12 col-12">
-              <div class="making_main_txt_div bg-white p-5 shadow-sm" style="border-radius:15px; border-top: 4px solid orange;">
-                <h3 style="font-weight:700; margin-bottom:20px;"> Making a <span style="color:orange;">difference to the world</span> we live in!</h3>
-                <p class="lead text-muted" style="font-size:1.1rem;">Small actions can lead to big changes. By following the simple principles of reduce, reuse, and recycle, we can all play a part in preserving our planet. Let's start by cutting down on waste, finding creative ways to repurpose items, and making sure to recycle whenever possible. Together, our collective efforts can make a world of difference for generations to come.</p>
-              </div>
-             </div>
+      <div class="col-lg-6 ps-lg-5" data-aos="fade-left" data-aos-delay="200">
+        <div style="position: relative;">
+          <!-- Using original image as requested to keep local theme context, styled beautifully -->
+          <img src="./Picsart_24-04-17_13-59-15-536.png" alt="Plastic Dana and PPCP raw materials" class="img-fluid rounded-4 shadow-lg" style="width: 100%; border: 1px solid #efefef; object-fit: cover; min-height: 350px;">
+          <!-- Overlapping Callout in Orange theme -->
+          <div class="bg-white p-4 rounded-4 shadow-lg" style="position: absolute; bottom: -20px; left: -20px; border-left: 5px solid orange; max-width: 250px;">
+            <div class="d-flex align-items-center mb-2">
+              <i class="fas fa-leaf fs-3 me-3" style="color: orange;"></i>
+              <h5 class="mb-0 fw-bold" style="color: #333;">Sustainable</h5>
+            </div>
+            <p class="text-muted small mb-0 mt-2">Dedicated to preserving the planet via rigorous recycling.</p>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   </div>
 </section>
-<section class="recycle_div_icon bg-white py-5">
-  <div class="textCentre container">
-    <div class="recycle_head_title mb-5" data-aos="fade-up">
-    <h2 style="font-weight:800; font-size:2.5rem;"><i class="fas fa-recycle" style="color:#2ecc71; margin-right:15px;"></i>Recycle <span style="color:orange;">today</span> for a better <span style="color:orange;">tomorrow</span></h2>
+
+
+<section style="background-color: #1a1a1a; color: white; padding: 100px 0; position: relative; overflow: hidden; border-bottom: 5px solid orange;">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
+        <span class="badge px-3 py-2 rounded-pill mb-3 fw-bold" style="background-color: rgba(255,165,0,0.2); color: orange;"><i class="fas fa-truck-fast me-2"></i>PAN-INDIA REACH</span>
+        <h2 class="display-5 fw-bold mb-4">Delivering Excellence <br><span style="color: orange;">Nationwide</span></h2>
+        <p class="lead mb-4" style="color: #aaa; line-height: 1.8;">From our advanced manufacturing hubs in Delhi NCR (Bawana & Sampla) to every corner of the country, our robust logistics network ensures your supply chain never stops. We bridge distances with premium plastic derivatives rapidly.</p>
+        
+        <div class="d-flex align-items-center mb-3 mt-5">
+          <div class="me-5">
+            <h3 class="fw-bold text-white mb-0" style="font-size: 2.5rem;">100<span style="color: orange;">+</span></h3>
+            <p class="small text-uppercase text-muted fw-bold" style="letter-spacing: 1px;">Cities Served</p>
+          </div>
+          <div>
+            <h3 class="fw-bold text-white mb-0" style="font-size: 2.5rem;">7 Days</h3>
+            <p class="small text-uppercase text-muted fw-bold" style="letter-spacing: 1px;">Dispatch Operations</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-7 position-relative" data-aos="zoom-in" data-aos-delay="200" style="height: 450px;">
+        <!-- 3D Map Container -->
+        <div style="position: absolute; width: 100%; height: 100%; perspective: 1200px; display: flex; align-items: center; justify-content: center;">
+          
+          <div style="width: 400px; height: 450px; position: relative; transform: scale(1.4) rotateX(60deg) rotateZ(-25deg); transform-style: preserve-3d; transition: transform 0.5s ease-out;" id="map3d" onmousemove="this.style.transform='scale(1.4) rotateX('+(60-event.movementY*0.1)+'deg) rotateZ('+(-25+event.movementX*0.1)+'deg)'" onmouseleave="this.style.transform='scale(1.4) rotateX(60deg) rotateZ(-25deg)'">
+            
+            <!-- Grid Base underneath map -->
+            <div style="position: absolute; top: -10%; left: -10%; width: 120%; height: 120%; background-image: linear-gradient(rgba(255,165,0,0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(255,165,0,0.15) 1px, transparent 1px); background-size: 40px 40px; z-index: -1; transform: translateZ(-20px); box-shadow: inset 0 0 50px #1a1a1a;"></div>
+
+            <!-- Base Map Image -->
+            <img src="https://img.icons8.com/ios-filled/500/ffffff/india-map.png" alt="India Map" style="width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 0px 8px rgba(255,165,0,0.8)) drop-shadow(0 20px 30px rgba(255,165,0,0.3)); opacity: 0.3; position: absolute; top:0; left:0; transform: translateZ(0);">
+            
+            <!-- Origin Point: Delhi -->
+            <div style="position: absolute; top: 23%; left: 31%; transform: translateZ(5px); z-index: 20; transform-style: preserve-3d;">
+              <div style="width: 14px; height: 14px; background: #fff; border-radius: 50%; box-shadow: 0 0 20px 5px orange; border: 3px solid orange;"></div>
+              <!-- Flat Text Label Counter-Rotated -->
+              <div style="position: absolute; top: 0; left: 0; color: white; font-weight: 900; font-size: 20px; text-shadow: 0 4px 10px rgba(0,0,0,0.8); letter-spacing: 2px; transform: translate3d(-35px, -30px, 40px) rotateZ(25deg) rotateX(-60deg);">DELHI</div>
+            </div>
+            
+            <!-- Destination Dots -->
+            <!-- Gujarat -->
+            <div style="position: absolute; top: 48%; left: 12%; transform: translateZ(2px);"><div style="width: 8px; height: 8px; background: orange; border-radius: 50%; box-shadow: 0 0 10px orange;"></div></div>
+            <!-- Maharashtra -->
+            <div style="position: absolute; top: 55%; left: 25%; transform: translateZ(2px);"><div style="width: 8px; height: 8px; background: orange; border-radius: 50%; box-shadow: 0 0 10px orange;"></div></div>
+            <!-- MP -->
+            <div style="position: absolute; top: 48%; left: 35%; transform: translateZ(2px);"><div style="width: 8px; height: 8px; background: orange; border-radius: 50%; box-shadow: 0 0 10px orange;"></div></div>
+            <!-- Bihar -->
+            <div style="position: absolute; top: 38%; left: 65%; transform: translateZ(2px);"><div style="width: 8px; height: 8px; background: orange; border-radius: 50%; box-shadow: 0 0 10px orange;"></div></div>
+            <!-- Ranchi / Jharkhand -->
+            <div style="position: absolute; top: 45%; left: 62%; transform: translateZ(2px);"><div style="width: 8px; height: 8px; background: orange; border-radius: 50%; box-shadow: 0 0 10px orange;"></div></div>
+
+            <!-- SVG Arcs and Flying Particles -->
+            <svg width="400" height="450" style="position: absolute; top:0; left:0; transform: translateZ(10px); overflow: visible;">
+              <defs>
+                <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#fff" stop-opacity="0.8" />
+                  <stop offset="100%" stop-color="orange" stop-opacity="0.1" />
+                </linearGradient>
+                <filter id="glow">
+                  <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                  <feMerge>
+                    <feMergeNode in="coloredBlur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                  </feMerge>
+                </filter>
+              </defs>
+              
+              <!-- Static Arc Paths -->
+              <path d="M 124,103 Q 60,130 48,216" stroke="url(#lineGrad)" stroke-width="1.5" stroke-dasharray="4" fill="none" class="path-line" /> <!-- Gujarat -->
+              <path d="M 124,103 Q 90,170 100,247" stroke="url(#lineGrad)" stroke-width="1.5" stroke-dasharray="4" fill="none" class="path-line" /> <!-- Maharashtra -->
+              <path d="M 124,103 Q 160,150 140,216" stroke="url(#lineGrad)" stroke-width="1.5" stroke-dasharray="4" fill="none" class="path-line" /> <!-- MP -->
+              <path d="M 124,103 Q 200,120 260,171" stroke="url(#lineGrad)" stroke-width="1.5" stroke-dasharray="4" fill="none" class="path-line" /> <!-- Bihar -->
+              <path d="M 124,103 Q 200,140 248,202" stroke="url(#lineGrad)" stroke-width="1.5" stroke-dasharray="4" fill="none" class="path-line" /> <!-- Ranchi -->
+
+              <!-- Animated Flying Particles along the paths -->
+              <circle r="4" fill="#fff" filter="url(#glow)">
+                <animateMotion dur="2.1s" repeatCount="indefinite" path="M 124,103 Q 60,130 48,216" />
+              </circle>
+              <circle r="4" fill="#fff" filter="url(#glow)">
+                <animateMotion dur="2.6s" repeatCount="indefinite" path="M 124,103 Q 90,170 100,247" />
+              </circle>
+              <circle r="4" fill="#fff" filter="url(#glow)">
+                <animateMotion dur="1.8s" repeatCount="indefinite" path="M 124,103 Q 160,150 140,216" />
+              </circle>
+              <circle r="4" fill="#fff" filter="url(#glow)">
+                <animateMotion dur="2.4s" repeatCount="indefinite" path="M 124,103 Q 200,120 260,171" />
+              </circle>
+              <circle r="4" fill="#fff" filter="url(#glow)">
+                <animateMotion dur="2.0s" repeatCount="indefinite" path="M 124,103 Q 200,140 248,202" />
+              </circle>
+            </svg>
+          </div>
+          
+        </div>
+      </div>
     </div>
-    <div class="row justify-content-center g-4">
-      <div class="col-lg-2 col-md-3 col-sm-4 col-6" data-aos="fade-up" data-aos-delay="100">
-     <div class="recycle_icon_div text-center">
-      <div class="recycle_img_div bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3 shadow-sm" style="width:100px; height:100px;">
-        <img src="mk01.png" alt="Use Recycled Materials Plastic Dana" style="width:50px;">
+  </div>
+</section>
+
+<!-- The Process / Recycle Today -->
+<section class="py-5" style="background-color: #fafafa;">
+  <div class="container py-5">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="display-5 fw-bold" style="color: #212529;">Recycle <span style="color: orange;">Today</span> for a Better Tomorrow</h2>
+      <div class="orange-line mx-auto mt-3 mb-4" style="width: 80px; height: 4px; border-radius: 2px;"></div>
+      <p class="text-muted mt-3" style="font-size: 1.1rem;">Our rigorous 5-step process ensures maximum sustainability and material integrity.</p>
+    </div>
+
+    <div class="row g-4 justify-content-center mt-4">
+      <!-- Step 1 -->
+      <div class="col-lg-2 col-md-4 col-sm-6 text-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="process-card p-4 bg-white rounded-3 shadow-sm h-100 position-relative" style="transition: all 0.3s; border-bottom: 3px solid transparent;" onmouseover="this.style.transform='translateY(-8px)'; this.style.borderBottom='3px solid orange'; this.style.boxShadow='0 10px 20px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='translateY(0)'; this.style.borderBottom='3px solid transparent'; this.style.boxShadow='var(--bs-box-shadow-sm)'">
+          <div class="icon-wrapper mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle" style="width: 80px; height: 80px; background-color: rgba(255,165,0,0.08);">
+            <img src="mk01.png" alt="Use Recycled Materials" style="width: 40px; height: 40px; object-fit: contain;" onerror="this.src='./logo.jpeg'">
+          </div>
+          <h5 class="fw-bold fs-6 mb-0" style="color: #444;">Use Recycled<br>Materials</h5>
+        </div>
       </div>
-    <h5 style="font-size:1rem; font-weight:600;">Use Recycled Materials</h5>
-     </div>
+      <!-- Step 2 -->
+      <div class="col-lg-2 col-md-4 col-sm-6 text-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="process-card p-4 bg-white rounded-3 shadow-sm h-100 position-relative" style="transition: all 0.3s; border-bottom: 3px solid transparent;" onmouseover="this.style.transform='translateY(-8px)'; this.style.borderBottom='3px solid orange'; this.style.boxShadow='0 10px 20px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='translateY(0)'; this.style.borderBottom='3px solid transparent'; this.style.boxShadow='var(--bs-box-shadow-sm)'">
+          <div class="icon-wrapper mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle" style="width: 80px; height: 80px; background-color: rgba(255,165,0,0.08);">
+            <img src="mk02.png" alt="Dump Collection" style="width: 40px; height: 40px; object-fit: contain;" onerror="this.src='./logo.jpeg'">
+          </div>
+          <h5 class="fw-bold fs-6 mb-0" style="color: #444;">Dump Collection</h5>
+        </div>
       </div>
-      <div class="col-lg-2 col-md-3 col-sm-4 col-6" data-aos="fade-up" data-aos-delay="200">
-     <div class="recycle_icon_div text-center">
-      <div class="recycle_img_div bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3 shadow-sm" style="width:100px; height:100px;">
-        <img src="mk02.png" alt="Dump Collection PP Granules" style="width:50px;">
+      <!-- Step 3 -->
+      <div class="col-lg-2 col-md-4 col-sm-6 text-center" data-aos="fade-up" data-aos-delay="300">
+        <div class="process-card p-4 bg-white rounded-3 shadow-sm h-100 position-relative" style="transition: all 0.3s; border-bottom: 3px solid transparent;" onmouseover="this.style.transform='translateY(-8px)'; this.style.borderBottom='3px solid orange'; this.style.boxShadow='0 10px 20px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='translateY(0)'; this.style.borderBottom='3px solid transparent'; this.style.boxShadow='var(--bs-box-shadow-sm)'">
+          <div class="icon-wrapper mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle" style="width: 80px; height: 80px; background-color: rgba(255,165,0,0.08);">
+            <img src="mk03.png" alt="No Landfilling" style="width: 40px; height: 40px; object-fit: contain;" onerror="this.src='./logo.jpeg'">
+          </div>
+          <h5 class="fw-bold fs-6 mb-0" style="color: #444;">No Landfilling</h5>
+        </div>
       </div>
-    <h5 style="font-size:1rem; font-weight:600;">Dump Collection</h5>
-     </div>
+      <!-- Step 4 -->
+      <div class="col-lg-2 col-md-4 col-sm-6 text-center" data-aos="fade-up" data-aos-delay="400">
+        <div class="process-card p-4 bg-white rounded-3 shadow-sm h-100 position-relative" style="transition: all 0.3s; border-bottom: 3px solid transparent;" onmouseover="this.style.transform='translateY(-8px)'; this.style.borderBottom='3px solid orange'; this.style.boxShadow='0 10px 20px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='translateY(0)'; this.style.borderBottom='3px solid transparent'; this.style.boxShadow='var(--bs-box-shadow-sm)'">
+          <div class="icon-wrapper mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle" style="width: 80px; height: 80px; background-color: rgba(255,165,0,0.08);">
+            <img src="mk04.png" alt="Hot Washed" style="width: 40px; height: 40px; object-fit: contain;" onerror="this.src='./logo.jpeg'">
+          </div>
+          <h5 class="fw-bold fs-6 mb-0" style="color: #444;">Hot Washed <span class="text-muted" style="font-weight: bold;">(x3)</span></h5>
+        </div>
       </div>
-      <div class="col-lg-2 col-md-3 col-sm-4 col-6" data-aos="fade-up" data-aos-delay="300">
-     <div class="recycle_icon_div text-center">
-      <div class="recycle_img_div bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3 shadow-sm" style="width:100px; height:100px;">
-        <img src="mk03.png" alt="No Landfilling Recycled PP" style="width:50px;">
-      </div>
-             <h5 style="font-size:1rem; font-weight:600;">No Landfilling</h5>
-     </div>
-      </div>
-      <div class="col-lg-2 col-md-3 col-sm-4 col-6" data-aos="fade-up" data-aos-delay="400">
-     <div class="recycle_icon_div text-center">
-      <div class="recycle_img_div bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3 shadow-sm" style="width:100px; height:100px;">
-        <img src="mk04.png" alt="Hot washed plastic scrap materials" style="width:50px;">
-      </div>
-         <h5 style="font-size:1rem; font-weight:600;">Hot washed 3 times with chemical</h5>
-     </div>
-      </div>
-      <div class="col-lg-2 col-md-3 col-sm-4 col-6" data-aos="fade-up" data-aos-delay="500">
-     <div class="recycle_icon_div text-center">
-      <div class="recycle_img_div bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3 shadow-sm" style="width:100px; height:100px;">
-        <img src="mk05.png" alt="Sorting and Granulating plastic dana" style="width:50px;">
-      </div>
-          <h5 style="font-size:1rem; font-weight:600;">Sorting &amp; Granulating</h5>
-     </div>
+      <!-- Step 5 -->
+      <div class="col-lg-2 col-md-4 col-sm-6 text-center" data-aos="fade-up" data-aos-delay="500">
+        <div class="process-card p-4 bg-white rounded-3 shadow-sm h-100 position-relative" style="transition: all 0.3s; border-bottom: 3px solid transparent;" onmouseover="this.style.transform='translateY(-8px)'; this.style.borderBottom='3px solid orange'; this.style.boxShadow='0 10px 20px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='translateY(0)'; this.style.borderBottom='3px solid transparent'; this.style.boxShadow='var(--bs-box-shadow-sm)'">
+          <div class="icon-wrapper mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle" style="width: 80px; height: 80px; background-color: rgba(255,165,0,0.08);">
+            <img src="mk05.png" alt="Sorting and Granulating" style="width: 40px; height: 40px; object-fit: contain;" onerror="this.src='./logo.jpeg'">
+          </div>
+          <h5 class="fw-bold fs-6 mb-0" style="color: #444;">Sorting & Granulating</h5>
+        </div>
       </div>
     </div>
   </div>
