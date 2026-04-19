@@ -8,161 +8,160 @@
     <meta name="keywords" content="about Jindal Polymers, plastic dana manufacturer, pp granules supplier, recycled plastic maker, plastic dana granules">
     <link rel="icon" type="image/jpeg" href="logo.jpeg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-      .cardOrange {
-        background-color: rgb(214, 139, 0);
-      }
-      .cardContent {
-        text-align: center;
-        color: aqua;
-      }
-      .orange-line {
-        width: 100%;
-        height: 5px;
-        background-color: orange;
-      }
-      .textCentre {
-        text-align: center;
-      }
-      .about_img_box.first_big {
-        width: 90%;
-        padding-left: 0;
-        margin-right: -50px;
-      }
-      .about_img_box.first_big img {
-        width: 100%;
-        max-height: 400px;
-        object-fit: cover;
-      }
-      .heading {
-        text-align: center;
-      }
-      .nav .dropdown {
-        position: static;
-        display: inline-block;
-      }
-      .nav .dropdown-menu {
-          display: none;
-          position: absolute;
-          background-color: white;
-          min-width: 250px;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 1001;
-          left: 0;
-          top: 100%;
-          margin-top: 0;
-          border: 1px solid rgba(0,0,0,0.15);
-          padding: 5px 0;
-          width: auto;
-      }
-      .nav .dropdown:hover .dropdown-menu {
-          display: block;
-      }
-      .nav .dropdown-toggle {
-          background: none;
-          border: none;
-          color: #212529;
-          padding: 8px 16px;
-          cursor: pointer;
-      }
-      .nav .dropdown-toggle:hover {
-          color: orange;
-      }
-      .dropdown-item {
-          padding: 8px 16px;
-          color: #212529;
-          display: block;
-          clear: both;
-          white-space: nowrap;
-          position: relative;
-          border-bottom: 1px solid #f0f0f0;
-          margin: 0 5px;
-          transition: all 0.2s ease;
-      }
-      .dropdown-menu > li:last-child .dropdown-item {
-          border-bottom: none;
-      }
-      .dropdown-item:hover {
-          background-color: orange;
-          color: white;
-      }
-      .nav .dropdown-submenu {
-          position: relative;
-      }
-      .nav .dropdown-menu .dropdown-submenu .dropdown-menu {
-          position: absolute;
-          top: 0;
-          left: 100%;
-          margin-left: 0;
-          display: none;
-          min-width: 200px;
-          border-left: 1px solid #f0f0f0;
-      }
-      .nav .dropdown-menu .dropdown-submenu:hover > .dropdown-menu {
-          display: block;
-      }
-      .nav .dropdown-menu .dropdown-submenu > a:after {
-          content: "▸";
-          float: right;
-          margin-left: 10px;
-      }
-      .nav .dropdown-menu .dropdown-submenu:hover > a {
-          background-color: orange;
-          color: white;
-      }
-      .dropdown-submenu .dropdown-menu .dropdown-item {
-          border-bottom: 1px solid #f0f0f0;
-      }
-      .dropdown-submenu .dropdown-menu > li:last-child .dropdown-item {
-          border-bottom: none;
-      }
-      .dropdown-item:hover {
-          border-bottom-color: rgba(255,255,255,0.3);
-      }
-      .dropdown-item:hover + .dropdown-item {
-          border-top-color: rgba(255,255,255,0.3);
-      }
-      .dropdown-menu:hover {
-          display: block !important;
-      }
-      .nav {
-          position: relative;
-          z-index: 1000;
-      }
+      body { font-family: 'Inter', sans-serif; background-color: #ffffff; }
       
+      /* Base styles mirroring index.html */
+      .orange-line { width: 100%; height: 5px; background-color: orange; }
+      .bg-orange { background-color: orange !important; }
+      .text-orange { color: orange !important; }
+
+      /* Dropdown CSS from home page */
+      .nav .dropdown { position: relative; display: inline-block; }
+      .nav .dropdown-menu { display: none; position: absolute; background-color: white; min-width: 250px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1001; left: 0; top: 100%; margin-top: 0; border: 1px solid rgba(0,0,0,0.15); padding: 5px 0; width: auto; }
+      .nav .dropdown:hover .dropdown-menu { display: block; }
+      .nav .dropdown-toggle { background: none; border: none; color: #212529; padding: 8px 16px; cursor: pointer; }
+      .nav .dropdown-toggle:hover { color: orange; }
+      .dropdown-item { padding: 8px 16px; color: #212529; display: block; clear: both; white-space: nowrap; position: relative; border-bottom: 1px solid #f0f0f0; margin: 0 5px; transition: all 0.2s ease; }
+      .dropdown-menu > li:last-child .dropdown-item { border-bottom: none; }
+      .dropdown-item:hover { background-color: orange; color: white; }
+      .nav .dropdown-submenu { position: relative; }
+      .nav .dropdown-menu .dropdown-submenu .dropdown-menu { position: absolute; top: 0; left: 100%; margin-left: 0; display: none; min-width: 200px; border-left: 1px solid #f0f0f0; }
+      .nav .dropdown-menu .dropdown-submenu:hover > .dropdown-menu { display: block; }
+      .nav .dropdown-menu .dropdown-submenu > a:after { content: "▸"; float: right; margin-left: 10px; }
+      .nav .dropdown-menu .dropdown-submenu:hover > a { background-color: orange; color: white; }
+      .dropdown-submenu .dropdown-menu .dropdown-item { border-bottom: 1px solid #f0f0f0; }
+      .dropdown-submenu .dropdown-menu > li:last-child .dropdown-item { border-bottom: none; }
+      .dropdown-item:hover { border-bottom-color: rgba(255,255,255,0.3); }
+      .dropdown-item:hover + .dropdown-item { border-top-color: rgba(255,255,255,0.3); }
+
       /* About Us Specific Styles */
-      .about-header {
-        text-align: center;
-        margin: 40px 0;
+      .about-hero-section { 
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('./mainphoto.png') center/cover; 
+        padding: 80px 0; 
+        color: white; 
+        position: relative; 
+        margin-bottom: 0px; 
       }
-      .about-header h1 {
-        font-size: 2.5rem;
+      .about-hero-glass { 
+        background: rgba(255,255,255,0.08); 
+        backdrop-filter: blur(12px); 
+        -webkit-backdrop-filter: blur(12px); 
+        padding: 40px; 
+        border-radius: 20px; 
+        border: 1px solid rgba(255,255,255,0.15); 
+        box-shadow: 0 20px 40px rgba(0,0,0,0.3); 
+      }
+      .feature-card {
+        background: white; 
+        padding: 30px 20px; 
+        border-radius: 12px; 
+        border: 1px solid rgba(0,0,0,0.05); 
+        transition: all 0.3s;
+        height: 100%;
+      }
+      .feature-card:hover {
+        box-shadow: 0 15px 30px rgba(0,0,0,0.08); 
+        transform: translateY(-8px);
+        border-color: rgba(255,165,0,0.3) !important;
+      }
+      .feature-icon-wrapper {
+        width: 60px;
+        height: 60px;
+        background: rgba(255,165,0,0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin-bottom: 20px;
       }
-      .about-header h1 span {
-        color: orange;
+      .dark-section {
+        background-color: #1a1a1a; 
+        color: white; 
+        padding: 80px 0; 
+        position: relative; 
+        overflow: hidden; 
+        border-bottom: 5px solid orange;
       }
-      .about-content h3 {
-        color: orange;
-        margin-bottom: 20px;
-      }
-      .about-content h4 {
-        color: orange;
-        margin: 25px 0 15px;
-      }
-      .about-content ul {
-        padding-left: 20px;
-      }
-      .about-content ul li {
-        margin-bottom: 10px;
-      }
-      .section-title {
-        color: orange;
-        margin: 40px 0 20px;
-        font-size: 2rem;
+      .whatsapp-float {
+        position:fixed;
+        width:60px;
+        height:60px;
+        bottom:40px;
+        right:40px;
+        background-color:#25d366;
+        color:#FFF;
+        border-radius:50px;
+        text-align:center;
+        font-size:30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index:100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
       }
     </style>
+
+
+<!-- SEO Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://jindalpolymers.in/#organization",
+      "name": "Jindal Polymers",
+      "url": "https://jindalpolymers.in/",
+      "logo": "https://jindalpolymers.in/logo.jpeg",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+91-7450085000",
+          "contactType": "customer service",
+          "areaServed": "IN",
+          "availableLanguage": "en"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://jindalpolymers.in/#website",
+      "url": "https://jindalpolymers.in/",
+      "name": "Jindal Polymers",
+      "publisher": {
+        "@id": "https://jindalpolymers.in/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://jindalpolymers.in/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://jindalpolymers.in/#localbusiness",
+      "name": "Jindal Polymers - Plastic Dana Manufacturer",
+      "image": "https://jindalpolymers.in/mainphoto.png",
+      "telephone": "+91-7450085000",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Plot No.315 & 311 Block-D, Sector-5, DSIIDC",
+        "addressLocality": "Bawana",
+        "addressRegion": "Delhi",
+        "postalCode": "110039",
+        "addressCountry": "IN"
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <div class="orange-line"></div>
@@ -297,160 +296,227 @@
     </div>
   </header>
 </div>
-
-<!-- About Us Content -->
-<div class="container">
-  <div class="about-header">
-    <h1><span>About</span> Jindal Polymers</h1>
-    <p class="lead">Offering Quality-Assured Range of PP Granules, CP Granules, Reprocessed Plastic Dana, and More</p>
-  </div>
-
-  <div class="row align-items-center">
-    <div class="col-lg-5 col-md-6 col-sm-12 col-12">
-      <div class="about_img_main_div">
-        <div class="about_img_box first_big">
-          <img src="./product-2.jpg" alt="Manufacturer of Plastic Dana and PP Granules" class="img-fluid first_big">
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-7 col-md-6 col-sm-12 col-12">
-      <div class="about-content">
-        <h3>AN OVERVIEW OF JINDAL POLYMERS</h3>
-        <p>Jindal Polymers is a trusted name in the plastic processing industry, recognized as a leading Manufacturer and Supplier of high-grade plastic raw materials. Our product range includes Natural PP Granules, Milky PP Granules, Colored PP Granules, Colored PPCP Granules and more. Known for our consistency and commitment to quality, we use carefully selected plastic scrap to manufacture products that stand out for their durability, strength, and performance.</p>
-        
-        <p>Our manufacturing unit is equipped with modern machinery and quality control systems, enabling us to produce granules and raw materials that meet diverse industrial needs. Every product is crafted in accordance with industry standards, and we maintain a wide inventory to fulfill both bulk and urgent orders efficiently.</p>
-      </div>
-    </div>
-  </div>
-
-  <h2 class="section-title">WHY CHOOSE US?</h2>
-  <div class="about-content">
-    <p>At Jindal Polymers, we believe in building long-term relationships with our clients through transparent dealings, superior quality, and timely services. Our well-coordinated team of professionals, along with our advanced resources, empowers us to stay ahead in a competitive market.</p>
-    
-    <p>Key reasons to choose us include:</p>
-    <ul>
-      <li>High-quality raw materials</li>
-      <li>Timely order fulfillment</li>
-      <li>Fair and ethical business practices</li>
-      <li>Cost-effective pricing</li>
-      <li>Experienced and skilled workforce</li>
-      <li>Well-equipped production infrastructure</li>
-    </ul>
-  </div>
-
-  <h2 class="section-title">QUALITY COMMITMENT</h2>
-  <div class="about-content">
-    <p>As a company rooted in excellence, quality is the cornerstone of all our operations. Each batch of plastic scrap is rigorously tested before processing to ensure it meets our internal quality benchmarks. Our final products – from PP Granules to CP Raw Materials – are valued in the market for their reliability, efficiency, and longevity.</p>
-  </div>
-
-  <h2 class="section-title">PRODUCT PORTFOLIO</h2>
-  <div class="about-content">
-    <p>We offer a comprehensive range of plastic raw materials that cater to a wide spectrum of industries. Our product offerings include:</p>
-    <ul>
-      <li>Colour PP Granules</li>
-      <li>Colour PPCP Granules</li>
-      <li>Colour PPCP Granules Special for Tasla and Tgari</li>
-      <li>Milky PP & PPCP Granules</li>
-      <li>Milky Colour PP Granules</li>
-      <li>Natural PPCP Granules</li>
-      <li>NPP</li>
-      <li>Black PP & PPCP Granules</li>
-    </ul>
-    <p>All products are available at competitive market prices with an assurance of consistency in quality.</p>
-  </div>
-
-  <h2 class="section-title">INFRASTRUCTURE</h2>
-  <div class="about-content">
-    <p>Our success is driven by a robust and well-structured infrastructure that includes dedicated units for production, quality control, packaging, and logistics. Each unit is equipped with state-of-the-art machinery and is managed by experienced personnel to ensure seamless operations. Our efficient logistics network further ensures that all deliveries are made within the promised timelines.</p>
-    
-  </div>
-</div>
-<section class="one_stop_solution">
-<div class="container">
-    <div class="row justify-content-center align-items-center">
-    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-        <div class="one_stop_img_div">
-        <img src="./Picsart_24-04-17_13-59-15-536.png" alt="Premium Quality Plastic Dana trading" class="img-fluid">
-        </div>
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-        <div class="one_stop_txt_div">
-        <h3>Your <span>One-Stop Solution</span> for Sustainable Plastic Scrap Trading Needs.</h3>
-        <ul>
-        <li> <i class="bx bx-spa"></i> Eco-Friendly Innovation, Unmatched Performance.</li>
-        <li> <i class="bx bx-spa"></i> Premium Quality, With Great Versatility.</li>
-        <li> <i class="bx bx-spa"></i> Affordable Excellence, Delivered to Your Doorstep Across India.</li>
-        </ul>
-        </div>
-    </div>
-    <section class=" mt-4 making_section">
-        <div class=" textCentre container">
-        <div class="row justify-content-center">
-            <div class="col-lg-10 col-md-12 col-sm-12 col-12">
-            <div class="making_main_txt_div">
-                <h3> Making a <span>difference to the world</span> we live in!</h3>
-                <p>Small actions can lead to big changes. By following the simple principles of reduce, reuse, and recycle, we can all play a part in preserving our planet. Let's start by cutting down on waste, finding creative ways to repurpose items, and making sure to recycle whenever possible. Together, our collective efforts can make a world of difference for generations to come.</p>
-            </div>
-            </div>
-        </div>
-        </div>
-    </section>
-    </div>
-</div>
-</section>
-<section class="recycle_div_icon">
-<div class="textCentre container">
-    <div class="recycle_head_title">
-    <h2> <img src="assets/images/iconimg01.png" alt="Recycle Logo" class="img-fluid"> Recycle <span>today</span> for a better <span>tomorrow</span></h2>
-    </div>
+<!-- Hero Section -->
+<section class="about-hero-section text-center" data-aos="fade-in">
+  <div class="container">
     <div class="row justify-content-center">
-    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-    <div class="recycle_icon_div">
-    <div class="recycle_img_div">
-        <img src="mk01.png" alt="Use Recycled Materials Plastic Dana" class="img-fluid">
+      <div class="col-lg-8 about-hero-glass" data-aos="zoom-in" data-aos-delay="200">
+        <h1 class="fw-bolder mb-3" style="font-size: 3.5rem;">About <span style="color:orange;">Jindal Polymers</span></h1>
+        <p class="lead mb-0" style="font-size: 1.25rem;">Offering a Quality-Assured Range of PP Granules, CP Granules, Reprocessed Plastic Dana, and More.</p>
+      </div>
     </div>
-    <h5>Use Recycled Materials</h5>
-    </div>
-    </div>
-    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-    <div class="recycle_icon_div">
-    <div class="recycle_img_div">
-        <img src="mk02.png" alt="Dump Collection PP Granules" class="img-fluid">
-    </div>
-    <h5>Dump Collection</h5>
-    </div>
-    </div>
-    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-    <div class="recycle_icon_div">
-    <div class="recycle_img_div">
-        <img src="mk03.png" alt="No Landfilling Recycled PP" class="img-fluid">
-    </div>
-            <h5>No Landfilling</h5>
-    </div>
-    </div>
-    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-    <div class="recycle_icon_div">
-    <div class="recycle_img_div">
-        <img src="mk04.png" alt="Hot washed plastic" class="img-fluid">
-    </div>
-        <h5>Hot washed 3 times with industrial chemical </h5>
-    </div>
-    </div>
-    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-    <div class="recycle_icon_div">
-    <div class="recycle_img_div">
-        <img src="mk05.png" alt="Sorting and Granulating" class="img-fluid">
-    </div>
-        <h5>Sorting &amp; Granulating</h5>
-    </div>
-    </div>
-    </div>
-</div>
+  </div>
 </section>
-<br>
 
-<!-- Footer - Same as Home Page -->
+<!-- Overview Section (Modeled after Crafting Excellence) -->
+<section class="py-5" style="background-color: #fafafa; position: relative; overflow: hidden;">
+  <div style="position: absolute; top: -50px; left: -50px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(255,165,0,0.1) 0%, rgba(255,165,0,0) 70%); border-radius: 50%; z-index: 0;"></div>
+  
+  <div class="container py-5" style="position: relative; z-index: 1;">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5" data-aos="fade-right">
+        <div style="position: relative; padding-right: 30px; padding-bottom: 30px;">
+          <!-- Main Image -->
+          <div style="border-radius: 20px; overflow: hidden; box-shadow: 0 25px 50px rgba(0,0,0,0.1); position: relative; z-index: 2;">
+            <img src="./mainphoto.png" alt="Jindal Polymers Top Plastic Dana Wholesale Supplier" class="img-fluid" style="width: 100%; height: auto; transition: transform 0.5s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+          </div>
+          <!-- Overlapping Card -->
+          <div data-aos="zoom-in" data-aos-delay="300" style="position: absolute; bottom: 0; right: 0; background: white; padding: 25px; border-radius: 15px; box-shadow: 0 15px 35px rgba(0,0,0,0.15); z-index: 3; border-left: 5px solid orange; max-width: 250px;">
+            <div style="display: flex; align-items: center; gap: 15px;">
+              <div style="width: 50px; height: 50px; background: rgba(255,165,0,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-industry" style="color: orange; font-size: 24px;"></i>
+              </div>
+              <div>
+                <h3 style="margin: 0; font-weight: 800; font-size: 1.5rem; color: #212529;">Trusted</h3>
+                <p style="margin: 0; font-size: 0.9rem; color: #6c757d; font-weight: 600;">Since Inception</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+        <span class="badge" style="background-color: rgba(255,165,0,0.1); color: orange; padding: 8px 16px; border-radius: 20px; font-weight: 700; letter-spacing: 1px; margin-bottom: 15px;">AN OVERVIEW</span>
+        <h2 style="font-weight: 800; font-size: 2.5rem; color: #212529; margin-bottom: 20px;">
+          Top Manufacturer of <span style="color: orange;">Plastic Dana & PP Granules</span>
+        </h2>
+        <p style="font-size: 1.1rem; color: #555; line-height: 1.8; margin-bottom: 20px;">
+          Jindal Polymers is a trusted name in the plastic processing industry, recognized as a leading Manufacturer and Supplier of high-grade plastic raw materials. Our product range includes Natural PP Granules, Milky PP Granules, Colored PP Granules, Colored PPCP Granules and more.
+        </p>
+        <p style="font-size: 1.1rem; color: #555; line-height: 1.8; margin-bottom: 0;">
+          Our manufacturing unit is equipped with modern machinery and quality control systems, enabling us to produce granules and raw materials that meet diverse industrial needs. Every product is crafted in accordance with industry standards, and we maintain a wide inventory to fulfill both bulk and urgent orders efficiently.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us Grid -->
+<section class="py-5" style="background-color: #fff;">
+  <div class="container py-5">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="badge" style="background-color: rgba(255,165,0,0.1); color: orange; padding: 8px 16px; border-radius: 20px; font-weight: 700; letter-spacing: 1px; margin-bottom: 10px;">ADVANTAGE</span>
+      <h2 style="font-weight: 800; font-size: 3rem; color: #212529;">
+        Why <span style="color: orange;">Choose Us?</span>
+      </h2>
+      <p class="text-muted mt-3" style="font-size: 1.1rem; max-width: 800px; margin: 0 auto;">At Jindal Polymers, we build long-term relationships through transparent dealings, superior quality, and timely services.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="feature-card">
+          <div class="feature-icon-wrapper"><i class="fas fa-gem fs-3 text-orange"></i></div>
+          <h4 class="fw-bold mb-3">High-Quality Materials</h4>
+          <p class="text-muted mb-0">We use only rigorously tested plastic scrap to ensure unparalleled durability, strength, and performance.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="feature-card">
+          <div class="feature-icon-wrapper"><i class="fas fa-clock fs-3 text-orange"></i></div>
+          <h4 class="fw-bold mb-3">Timely Delivery</h4>
+          <p class="text-muted mb-0">Our efficient logistics network guarantees that all local and pan-India orders are fulfilled within deadlines.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="feature-card">
+          <div class="feature-icon-wrapper"><i class="fas fa-handshake fs-3 text-orange"></i></div>
+          <h4 class="fw-bold mb-3">Ethical Practices</h4>
+          <p class="text-muted mb-0">Fair, transparent, and ethical operations form the core of our business relationship with every client.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="feature-card">
+          <div class="feature-icon-wrapper"><i class="fas fa-tags fs-3 text-orange"></i></div>
+          <h4 class="fw-bold mb-3">Cost-Effective</h4>
+          <p class="text-muted mb-0">We offer uncompromising excellence at highly competitive market pricing for all bulk orders.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="feature-card">
+          <div class="feature-icon-wrapper"><i class="fas fa-users fs-3 text-orange"></i></div>
+          <h4 class="fw-bold mb-3">Skilled Workforce</h4>
+          <p class="text-muted mb-0">Our experienced professionals are thoroughly trained in modern plastic processing techniques.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="feature-card">
+          <div class="feature-icon-wrapper"><i class="fas fa-cogs fs-3 text-orange"></i></div>
+          <h4 class="fw-bold mb-3">Advanced Infrastructure</h4>
+          <p class="text-muted mb-0">Equipped with state-of-the-art machinery and dedicated units for production and quality control.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Quality Commitment (Dark Ribbon) -->
+<section class="dark-section">
+  <div style="position: absolute; top: -50px; right: -50px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(255,165,0,0.1) 0%, rgba(255,165,0,0) 70%); border-radius: 50%; z-index: 0;"></div>
+  <div class="container" style="position: relative; z-index: 1;">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-8" data-aos="zoom-in">
+        <i class="fas fa-award mb-4" style="font-size: 4rem; color: orange;"></i>
+        <h2 class="display-5 fw-bold mb-4">Unwavering <span style="color: orange;">Quality Commitment</span></h2>
+        <p class="lead" style="color: #aaa; line-height: 1.8;">
+          As a company rooted in excellence, quality is the cornerstone of all our operations. Each batch of plastic scrap is rigorously tested before processing to ensure it meets our internal quality benchmarks. Our final products are valued in the market for their reliability, efficiency, and longevity.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Infrastructure & Portfolio -->
+<section class="py-5" style="background-color: #fafafa;">
+  <div class="container py-5">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6" data-aos="fade-right">
+        <span class="text-uppercase fw-bold text-orange" style="letter-spacing: 2px; font-size: 0.9rem;">OUR BACKBONE</span>
+        <h2 class="display-6 fw-bold mt-2 mb-4" style="color: #212529;">Robust <span class="text-orange">Infrastructure</span></h2>
+        <p class="text-muted mb-4" style="font-size: 1.1rem; line-height: 1.8;">Our success is driven by a well-structured infrastructure featuring designated units for production, quality checking, packaging, and logistics. Managed by skilled experts, our facility ensures seamless manufacturing round the clock to meet massive industrial demands.</p>
+        <a href="./contactus.html" class="btn text-white px-4 py-3 fw-bold rounded-pill shadow-sm" style="background: orange; transition: transform 0.3s; display: inline-block;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 10px 20px rgba(255,165,0,0.3)';" onmouseout="this.style.transform='none'; this.style.boxShadow='var(--bs-box-shadow-sm)';">Contact Our Facilities <i class="fas fa-arrow-right ms-2"></i></a>
+      </div>
+      
+      <div class="col-lg-6 ps-lg-5" data-aos="fade-left">
+        <div class="bg-white p-5 rounded-4 shadow-sm border" style="border-color: #efefef !important;">
+          <h3 class="fw-bold mb-4">Product <span class="text-orange">Portfolio</span></h3>
+          <p class="text-muted mb-4">A comprehensive range catering to diverse industrial sectors:</p>
+          <ul class="list-unstyled mb-0" style="font-size: 1.05rem; line-height: 2; color: #444;">
+            <li class="d-flex align-items-center mb-2"><i class="fas fa-check-circle me-3 text-orange text-opacity-75"></i> Colour PP & PPCP Granules</li>
+            <li class="d-flex align-items-center mb-2"><i class="fas fa-check-circle me-3 text-orange text-opacity-75"></i> Special Colour PPCP for Tasla & Tgari</li>
+            <li class="d-flex align-items-center mb-2"><i class="fas fa-check-circle me-3 text-orange text-opacity-75"></i> Milky PP, PPCP & Colour PP Granules</li>
+            <li class="d-flex align-items-center mb-2"><i class="fas fa-check-circle me-3 text-orange text-opacity-75"></i> Natural PPCP Granules</li>
+            <li class="d-flex align-items-center mb-2"><i class="fas fa-check-circle me-3 text-orange text-opacity-75"></i> NPP (Super, Chinidana)</li>
+            <li class="d-flex align-items-center"><i class="fas fa-check-circle me-3 text-orange text-opacity-75"></i> Black PP & PPCP Granules</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- One Stop Solution & Recycling -->
+<section class="py-5 bg-white border-top">
+  <div class="container py-5">
+    <div class="row justify-content-center align-items-center mb-5 pb-4 border-bottom">
+      <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-right">
+        <div class="position-relative">
+          <img src="./Picsart_24-04-17_13-59-15-536.png" alt="Premium Quality Plastic Dana" class="img-fluid rounded-4 shadow">
+        </div>
+      </div>
+      <div class="col-lg-7 ps-lg-5" data-aos="fade-left">
+        <h3 class="display-6 fw-bold mb-4">Your <span class="text-orange">One-Stop Solution</span><br>for Sustainable Trading</h3>
+        <ul class="list-unstyled mb-4" style="font-size: 1.1rem; line-height: 2; color: #555;">
+          <li class="d-flex align-items-center mb-3"><i class="fas fa-leaf fs-4 text-orange me-3"></i> <div><strong>Eco-Friendly Innovation</strong> - Making a minimal footprint without compromising performance.</div></li>
+          <li class="d-flex align-items-center mb-3"><i class="fas fa-recycle fs-4 text-orange me-3"></i> <div><strong>Premium Quality</strong> - Extreme versatility matching your exact product requirements.</div></li>
+          <li class="d-flex align-items-center"><i class="fas fa-truck-fast fs-4 text-orange me-3"></i> <div><strong>Affordable Excellence</strong> - Delivered reliably to your doorstep across India.</div></li>
+        </ul>
+        <div class="bg-light p-4 rounded-3 border">
+          <h5 class="fw-bold mb-2">Making a <span class="text-orange">difference to the world!</span></h5>
+          <p class="text-muted mb-0" style="font-size: 0.95rem;">Small actions lead to big changes. By reducing, reusing, and recycling, we play a crucial part in preserving our planet. Together, our collective efforts make a world of difference for generations to come.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recycle Today -->
+    <div class="text-center mt-5">
+      <h3 class="fw-bold mb-5 display-6" data-aos="fade-up">Recycle <span class="text-orange">today</span> for a better <span class="text-orange">tomorrow</span></h3>
+      
+      <div class="row g-4 justify-content-center mt-4">
+        <div class="col-lg-2 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="text-center p-3">
+            <img src="mk01.png" alt="Use Recycled Materials" class="img-fluid mb-3" style="max-height: 80px; filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1)); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+            <h6 class="fw-bold text-dark">Use Recycled Materials</h6>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="text-center p-3">
+            <img src="mk02.png" alt="Dump Collection" class="img-fluid mb-3" style="max-height: 80px; filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1)); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+            <h6 class="fw-bold text-dark">Dump Collection</h6>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
+          <div class="text-center p-3">
+            <img src="mk03.png" alt="No Landfilling" class="img-fluid mb-3" style="max-height: 80px; filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1)); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+            <h6 class="fw-bold text-dark">No Landfilling</h6>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="400">
+          <div class="text-center p-3">
+            <img src="mk04.png" alt="Hot washed" class="img-fluid mb-3" style="max-height: 80px; filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1)); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+            <h6 class="fw-bold text-dark">Hot washed chemically</h6>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="500">
+          <div class="text-center p-3">
+            <img src="mk05.png" alt="Sorting and Granulating" class="img-fluid mb-3" style="max-height: 80px; filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1)); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+            <h6 class="fw-bold text-dark">Sorting & Granulating</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <div class="orange-line"></div>
 <div class="container my-5">
   <footer class="text-center text-lg-start bg-white pt-5 mt-5 border-top">
@@ -490,18 +556,6 @@
     © 2026 Copyright Jindal Polymers. All rights reserved.
   </div>
 </footer>
-<a href="https://wa.me/917450085000" class="whatsapp-float" target="_blank" data-aos="zoom-in" data-aos-delay="500">
-    <i class="fab fa-whatsapp"></i>
-</a>
-
-<a href="https://wa.me/917450085000" class="whatsapp-float" target="_blank" data-aos="zoom-in" data-aos-delay="500">
-    <i class="fab fa-whatsapp"></i>
-</a>
-
-<a href="https://wa.me/917450085000" class="whatsapp-float" target="_blank" data-aos="zoom-in" data-aos-delay="500">
-    <i class="fab fa-whatsapp"></i>
-</a>
-
 </div>
 
 <br>
@@ -534,5 +588,12 @@
     }
   });
 </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+</script>
+<a href="https://wa.me/917450085000" class="whatsapp-float" target="_blank" style="display:flex;align-items:center;justify-content:center;">
+    <i class="fab fa-whatsapp"></i>
+</a>
 </body>
 </html>

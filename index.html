@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
       body { font-family: 'Inter', sans-serif; background-color: #ffffff; }
-      .hero-section { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('./product-2.jpg') center/cover; padding: 60px 0; color: white; position: relative; margin-bottom: 45px; }
+      .hero-section { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('./mainphoto.png') center/cover; padding: 60px 0; color: white; position: relative; margin-bottom: 45px; }
       .hero-glass { background: rgba(255,255,255,0.08); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); padding: 40px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
       .filter-btn { background: white; border: 2px solid orange; color: #333; padding: 8px 20px; border-radius: 30px; margin: 4px; font-size: 0.95rem; font-weight: 600; transition: all 0.3s; box-shadow: 0 4px 6px rgba(0,0,0,0.05); cursor:pointer; }
       .filter-btn.active, .filter-btn:hover { background: orange; color: white; transform: translateY(-3px); box-shadow: 0 8px 15px rgba(255, 140, 0, 0.3); }
@@ -48,7 +48,7 @@
         text-align: center;
       }
       .nav .dropdown {
-        position: static;
+        position: relative;
         display: inline-block;
       }
 
@@ -169,7 +169,80 @@
           max-height: 400px; /* Adjust as needed */
           object-fit: cover;
       }
-    </style>
+    
+      .whatsapp-float {
+        position:fixed;
+        width:60px;
+        height:60px;
+        bottom:40px;
+        right:40px;
+        background-color:#25d366;
+        color:#FFF;
+        border-radius:50px;
+        text-align:center;
+        font-size:30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index:100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+      }
+</style>
+
+<!-- SEO Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://jindalpolymers.in/#organization",
+      "name": "Jindal Polymers",
+      "url": "https://jindalpolymers.in/",
+      "logo": "https://jindalpolymers.in/logo.jpeg",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+91-7450085000",
+          "contactType": "customer service",
+          "areaServed": "IN",
+          "availableLanguage": "en"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://jindalpolymers.in/#website",
+      "url": "https://jindalpolymers.in/",
+      "name": "Jindal Polymers",
+      "publisher": {
+        "@id": "https://jindalpolymers.in/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://jindalpolymers.in/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://jindalpolymers.in/#localbusiness",
+      "name": "Jindal Polymers - Plastic Dana Manufacturer",
+      "image": "https://jindalpolymers.in/mainphoto.png",
+      "telephone": "+91-7450085000",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Plot No.315 & 311 Block-D, Sector-5, DSIIDC",
+        "addressLocality": "Bawana",
+        "addressRegion": "Delhi",
+        "postalCode": "110039",
+        "addressCountry": "IN"
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <div class="orange-line"></div>
@@ -341,7 +414,7 @@
         <div style="position: relative; padding-right: 30px; padding-bottom: 30px;">
           <!-- Main Image -->
           <div style="border-radius: 20px; overflow: hidden; box-shadow: 0 25px 50px rgba(0,0,0,0.1); position: relative; z-index: 2;">
-            <img src="./product-2.jpg" alt="Jindal Polymers Facility" class="img-fluid" style="width: 100%; height: auto; transition: transform 0.5s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="./mainphoto.png" alt="Jindal Polymers Facility" class="img-fluid" style="width: 100%; height: auto; transition: transform 0.5s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
           </div>
           <!-- Overlapping Card -->
           <div data-aos="zoom-in" data-aos-delay="300" style="position: absolute; bottom: 0; right: 0; background: white; padding: 25px; border-radius: 15px; box-shadow: 0 15px 35px rgba(0,0,0,0.15); z-index: 3; border-left: 5px solid orange; max-width: 250px;">
@@ -589,18 +662,6 @@
     © 2026 Copyright Jindal Polymers. All rights reserved.
   </div>
 </footer>
-<a href="https://wa.me/917450085000" class="whatsapp-float" target="_blank" data-aos="zoom-in" data-aos-delay="500">
-    <i class="fab fa-whatsapp"></i>
-</a>
-
-<a href="https://wa.me/917450085000" class="whatsapp-float" target="_blank" data-aos="zoom-in" data-aos-delay="500">
-    <i class="fab fa-whatsapp"></i>
-</a>
-
-<a href="https://wa.me/917450085000" class="whatsapp-float" target="_blank" data-aos="zoom-in" data-aos-delay="500">
-    <i class="fab fa-whatsapp"></i>
-</a>
-
 </div>
 <div class="orange-line"></div>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -733,5 +794,8 @@
     AOS.init({ duration: 800, once: true });
   });
 </script>
+<a href="https://wa.me/917450085000" class="whatsapp-float" target="_blank" style="display:flex;align-items:center;justify-content:center;">
+    <i class="fab fa-whatsapp"></i>
+</a>
 </body>
 </html>
